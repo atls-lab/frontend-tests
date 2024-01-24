@@ -1,7 +1,6 @@
 {
   "name": "@identity/home-page",
   "version": "0.0.1",
-  "type": "module",
   "main": "src/index.ts",
   "dependencies": {
     "@identity/navbar-fragment": "workspace:0.0.1"

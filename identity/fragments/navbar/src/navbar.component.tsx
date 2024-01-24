@@ -1,11 +1,21 @@
-import React from 'react'
-import {Hello} from '@ui/hello'
+import React      from 'react'
+
+import { Hello }  from '@ui/hello'
+import { Box }    from '@ui/layout'
+import { Column } from '@ui/layout'
 
 export const Navbar = () => (
-  <>
-    <div style={{ height: 20, backgroundColor: 'red', padding: 20, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <Column gap={20}>
+    <Box
+      justifyContent='center'
+      alignItems='center'
+      padding='huge'
+      backgroundColor='darkRed'
+      border='boldLightGray'
+      boxShadow='black.fifteenHundredthsTransparent'
+    >
       IDENTITY
-    </div>
+    </Box>
     <Hello />
-  </>
+  </Column>
 )

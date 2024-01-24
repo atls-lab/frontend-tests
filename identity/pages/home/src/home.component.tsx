@@ -1,10 +1,13 @@
-import React         from 'react'
-import {Navbar} from '@identity/navbar-fragment'
+import React      from 'react'
 
-const HomePage = () => <div>
-  <Navbar />
-  <br />
-  CONTENT
-</div>
+import { Navbar } from '@identity/navbar-fragment'
+
+const HomePage = () => (
+  <div>
+    <Navbar />
+    <br />
+    CONTENT
+  </div>
+)
 
 export default HomePage

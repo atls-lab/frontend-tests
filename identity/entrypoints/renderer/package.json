@@ -9,10 +9,14 @@
     "start": "node dist/src/index.js"
   },
   "dependencies": {
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
     "@identity/home-page": "workspace:0.0.1",
+    "@ui/theme": "workspace:0.0.1",
     "next": "14.1.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-system": "5.1.5"
   },
   "devDependencies": {
     "@types/node": "20.11.5",

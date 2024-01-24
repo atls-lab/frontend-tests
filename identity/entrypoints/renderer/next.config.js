@@ -1,10 +1,10 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
-    experimental: {
-        externalDir: true,
-        outputFileTracingRoot: path.join(__dirname, './'),
-        esmExternals: 'loose',
-    },
-    output: 'standalone'
+  experimental: {
+    externalDir: true,
+    outputFileTracingRoot: path.join(__dirname, './'),
+    esmExternals: 'loose',
+  },
+  output: 'standalone',
 }
