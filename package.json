@@ -3,7 +3,8 @@
   "private": true,
   "license": "BSD 3-Clause",
   "workspaces": [
-    "test/**/*",
+    "app/**/*",
+    "identity/**/*",
     "ui/**/*"
   ],
   "devDependencies": {
