@@ -1,10 +1,28 @@
-const path = require('path')
+import { join } from 'path'
+import { dirname } from 'path'
 
-module.exports = {
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+/** @type {import('next').NextConfig} */
+export default {
   experimental: {
     externalDir: true,
-    outputFileTracingRoot: path.join(__dirname, './'),
+    outputFileTracingRoot: join(__dirname, './'),
     esmExternals: 'loose',
+  },
+  webpack: (webpackConfig, { webpack }) => {
+    webpackConfig.plugins.push(
+      new webpack.NormalModuleReplacementPlugin(new RegExp(/\.js$/), function (
+        /** @type {{ request: string }} */
+        resource
+      ) {
+        resource.request = resource.request.replace('.js', '')
+      })
+    )
+    return webpackConfig
   },
   output: 'standalone',
 }

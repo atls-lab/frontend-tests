@@ -9,15 +9,18 @@
   ],
   "devDependencies": {
     "@atls/code-service": "0.0.24",
-    "@atls/config-eslint": "0.0.11",
-    "@atls/config-jest": "0.0.9",
+    "@atls/config-eslint": "0.0.12",
+    "@atls/config-jest": "0.0.10",
     "@jest/core": "29.7.0",
     "@types/eslint": "8.56.2",
     "@types/jest": "29.5.11",
     "@types/node": "20.11.5",
-    "eslint": "8.20.0",
+    "eslint": "8.56.0",
     "husky": "8.0.3",
     "typescript": "5.2.2"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "typecheckIgnorePatterns": [
+    "**/next-env.d.ts"
+  ]
 }

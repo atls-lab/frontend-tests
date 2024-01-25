@@ -1,10 +1,10 @@
-import * as theme                                from './theme'
+import * as theme                                from './theme/index.js'
 
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
 
 import React                                     from 'react'
 
-import { GlobalStyles }                          from './global.styles'
+import { GlobalStyles }                          from './global.styles.js'
 
 export const ThemeProvider = ({ children }) => (
   <>
