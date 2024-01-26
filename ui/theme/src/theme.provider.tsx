@@ -1,3 +1,4 @@
+'use client'
 import * as theme                                from './theme/index.js'
 
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'

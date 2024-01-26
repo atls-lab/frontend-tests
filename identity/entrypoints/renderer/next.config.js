@@ -13,6 +13,9 @@ export default {
     outputFileTracingRoot: join(__dirname, './'),
     esmExternals: 'loose',
   },
+  compiler: {
+    styledComponents: true,
+  },
   webpack: (webpackConfig, { webpack }) => {
     webpackConfig.plugins.push(
       new webpack.NormalModuleReplacementPlugin(new RegExp(/\.js$/), function (
