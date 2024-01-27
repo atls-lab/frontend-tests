@@ -1,13 +1,12 @@
-import { ThemeProvider } from '@ui/theme'
 import React             from 'react'
+
+import { ThemeProvider } from '@ui/theme'
 
 const RootLayout = ({ children }) => (
   <html>
-  <body>
-  <ThemeProvider>
-    {children}
-  </ThemeProvider>
-  </body>
+    <body>
+      <ThemeProvider>{children}</ThemeProvider>
+    </body>
   </html>
 )
 

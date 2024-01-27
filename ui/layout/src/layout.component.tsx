@@ -1,4 +1,5 @@
 'use client'
+
 import styled                   from '@emotion/styled'
 import { Layout as BaseLayout } from '@atls-ui-parts/layout'
 import { Box as BaseBox }       from '@atls-ui-parts/layout'
