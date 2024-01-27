@@ -25,5 +25,5 @@
     "target": "es2019",
     "jsx": "react"
   },
-  "include": []
+  "include": ["pages-router/**/*", "app-router/**/*", "ui/**/*"]
 }

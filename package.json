@@ -3,8 +3,8 @@
   "private": true,
   "license": "BSD 3-Clause",
   "workspaces": [
-    "app/**/*",
-    "identity/**/*",
+    "pages-router/**/*",
+    "app-router/**/*",
     "ui/**/*"
   ],
   "devDependencies": {
