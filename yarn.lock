@@ -153,9 +153,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@app/home-page@workspace:0.0.1, @app/home-page@workspace:app/pages/home":
+"@app/home-page@workspace:0.0.1, @app/home-page@workspace:pages-router/pages/home":
   version: 0.0.0-use.local
-  resolution: "@app/home-page@workspace:app/pages/home"
+  resolution: "@app/home-page@workspace:pages-router/pages/home"
   dependencies:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
@@ -168,9 +168,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@app/renderer-entrypoint@workspace:app/entrypoints/renderer":
+"@app/renderer-entrypoint@workspace:pages-router/entrypoints/renderer":
   version: 0.0.0-use.local
-  resolution: "@app/renderer-entrypoint@workspace:app/entrypoints/renderer"
+  resolution: "@app/renderer-entrypoint@workspace:pages-router/entrypoints/renderer"
   dependencies:
     "@app/home-page": "workspace:0.0.1"
     "@emotion/react": "npm:11.9.3"
@@ -1158,9 +1158,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@identity/home-page@workspace:0.0.1, @identity/home-page@workspace:identity/pages/home":
+"@identity/home-page@workspace:0.0.1, @identity/home-page@workspace:app-router/pages/home":
   version: 0.0.0-use.local
-  resolution: "@identity/home-page@workspace:identity/pages/home"
+  resolution: "@identity/home-page@workspace:app-router/pages/home"
   dependencies:
     "@identity/navbar-fragment": "workspace:0.0.1"
     "@types/react": "npm:18.2.48"
@@ -1173,9 +1173,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@identity/navbar-fragment@workspace:0.0.1, @identity/navbar-fragment@workspace:identity/fragments/navbar":
+"@identity/navbar-fragment@workspace:0.0.1, @identity/navbar-fragment@workspace:app-router/fragments/navbar":
   version: 0.0.0-use.local
-  resolution: "@identity/navbar-fragment@workspace:identity/fragments/navbar"
+  resolution: "@identity/navbar-fragment@workspace:app-router/fragments/navbar"
   dependencies:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
@@ -1189,9 +1189,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@identity/renderer-entrypoint@workspace:identity/entrypoints/renderer":
+"@identity/renderer-entrypoint@workspace:app-router/entrypoints/renderer":
   version: 0.0.0-use.local
-  resolution: "@identity/renderer-entrypoint@workspace:identity/entrypoints/renderer"
+  resolution: "@identity/renderer-entrypoint@workspace:app-router/entrypoints/renderer"
   dependencies:
     "@emotion/react": "npm:11.11.3"
     "@emotion/styled": "npm:11.11.0"
