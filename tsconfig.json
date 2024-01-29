@@ -8,14 +8,15 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
     "isolatedModules": false,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
     "noImplicitReturns": false,
     "noImplicitThis": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+    "skipLibCheck": true,
     "pretty": true,
     "removeComments": true,
     "resolveJsonModule": true,
@@ -24,5 +25,5 @@
     "target": "es2019",
     "jsx": "react"
   },
-  "include": []
+  "include": ["pages-router/**/*", "app-router/**/*", "ui/**/*"]
 }
