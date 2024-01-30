@@ -1,0 +1,7 @@
+{
+  "app.navbar.hello": "HELLO TOO FROM NAVBAR",
+  "app.navbar_fragment.identity": "IDENTITY",
+  "app.sidebar-fragment.identity": "SIDEBAR",
+  "app.home_page.content": "CONTENT",
+  "app.home_page.hello": "HELLO FROM HOME"
+}
