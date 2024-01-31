@@ -1,8 +1,8 @@
 import { mergeLocales }     from './merge-locales'
 import { processDirectory } from './process-directory'
+import {defaultPaths} from "./locales-generator.constants";
 
 const allLocales = []
-const defaultPaths = ['../../fragments', '../../pages']
 let outputFile = 'ru'
 const argPaths: string[] = []
 

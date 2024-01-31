@@ -7,6 +7,8 @@ import { dirname }          from 'path'
 import { MergeLocalesType } from './merge-locales.interfaces'
 
 export const mergeLocales: MergeLocalesType = (files, outputPath) => {
+  if (!files.length) return
+
   const mergedLocales = {}
   files.forEach((file) => {
     if (existsSync(file)) {
