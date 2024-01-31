@@ -6,7 +6,7 @@ import { readdirSync }          from 'fs'
 import { join }                 from 'path'
 
 import { ProcessDirectoryType } from './process-directory.interfaces'
-import { removeEmptyLocale }     from '../remove-empty-locale'
+import { removeEmptyLocale }    from '../remove-empty-locale'
 
 export const processDirectory: ProcessDirectoryType = (
   startPath,

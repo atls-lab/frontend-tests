@@ -1,11 +1,11 @@
-import { existsSync }                                                from 'fs'
-import { readFileSync }                                  from 'fs'
-import { readdirSync }                     from 'fs'
-import { rmSync }             from 'fs'
-import { unlinkSync } from 'fs'
-import { join }                                                      from 'path'
+import { existsSync }            from 'fs'
+import { readFileSync }          from 'fs'
+import { readdirSync }           from 'fs'
+import { rmSync }                from 'fs'
+import { unlinkSync }            from 'fs'
+import { join }                  from 'path'
 
-import { RemoveEmptyLocaleType }                                     from './remove-empty-locale.interfaces'
+import { RemoveEmptyLocaleType } from './remove-empty-locale.interfaces'
 
 export const removeEmptyLocale: RemoveEmptyLocaleType = (
   outputFilePath,
