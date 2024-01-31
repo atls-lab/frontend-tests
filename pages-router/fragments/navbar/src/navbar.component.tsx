@@ -25,7 +25,10 @@ export const Navbar = () => {
           <FormattedMessage id='app.navbar_fragment.identity' defaultMessage='IDENTITY' />
         </Text>
         <Hello
-          hello={formatMessage({ id: 'app.navbar.hello', defaultMessage: 'HELLO TOO FROM NAVBAR' })}
+          hello={formatMessage({
+            id: 'app.navbar.hello',
+            defaultMessage: 'HELLO TOO FROM NAVBAR',
+          })}
         />
       </Box>
     </Column>
