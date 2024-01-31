@@ -21,9 +21,11 @@
   },
   "packageManager": "yarn@4.0.2",
   "linterIgnorePatterns": [
-    "**/next.config.js"
+    "**/next.config.js",
+    "temporary"
   ],
   "typecheckIgnorePatterns": [
-    "**/next-env.d.ts"
+    "**/next-env.d.ts",
+    "temporary"
   ]
 }

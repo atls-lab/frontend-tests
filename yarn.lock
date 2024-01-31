@@ -2652,7 +2652,7 @@ __metadata:
     commander: "npm:9.5.0"
     prettier: "npm:2.8.8"
   bin:
-    generate-locales: dist/generator.js
+    generate-locales: temporary/generator.js
   languageName: unknown
   linkType: soft
 

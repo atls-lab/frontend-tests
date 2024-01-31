@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
-  "typings": "dist/index.d.ts",
+  "typings": "temporary/index.d.ts",
   "bin": {
-    "generate-locales": "dist/generator.js"
+    "generate-locales": "temporary/generator.js"
   },
   "files": [
     "dist"
