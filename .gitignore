@@ -50,3 +50,7 @@ dist/
 
 # Env
 .env
+
+#Vs code
+.vscode
+/.yarn/sdks
