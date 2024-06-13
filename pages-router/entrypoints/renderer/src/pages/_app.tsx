@@ -1,3 +1,5 @@
+import '@ui/theme/src/vanilla-extract/theme.css'
+
 import React             from 'react'
 
 import { ThemeProvider } from '@ui/theme'

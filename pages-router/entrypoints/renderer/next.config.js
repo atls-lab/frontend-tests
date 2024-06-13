@@ -3,11 +3,15 @@ import { dirname } from 'path'
 
 import { fileURLToPath } from 'url'
 
+import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
+
+const withVanillaExtract = createVanillaExtractPlugin()
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 /** @type {import('next').NextConfig} */
-export default {
+export default withVanillaExtract({
   experimental: {
     externalDir: true,
     outputFileTracingRoot: join(__dirname, './'),
@@ -25,4 +29,4 @@ export default {
     return webpackConfig
   },
   output: 'standalone',
-}
+})
