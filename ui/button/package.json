@@ -1,0 +1,22 @@
+{
+  "name": "@ui/button",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "generate-styles": "generate-styles src/styles/appearance -t ../../ui/theme/src/theme/colors.ts"
+  },
+  "dependencies": {
+    "@ui/theme": "workspace:0.0.1",
+    "@ui/utils": "workspace:0.0.1",
+    "@vanilla-extract/css": "1.14.2",
+    "@vanilla-extract/recipes": "0.5.2",
+    "@vanilla-extract/sprinkles": "1.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.48"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
