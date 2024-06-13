@@ -5,6 +5,7 @@
   "type": "module",
   "main": "src/index.ts",
   "dependencies": {
+    "@vanilla-extract/css": "1.15.2",
     "seamless-scroll-polyfill": "2.3.4"
   },
   "devDependencies": {
