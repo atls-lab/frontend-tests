@@ -1,4 +1,4 @@
-import '@ui/theme/src/vanilla-extract/theme.css'
+import '@ui/theme/src/theme.css'
 
 import React             from 'react'
 

@@ -1,4 +1,4 @@
-import { vars }              from '@ui/theme/src/vanilla-extract/theme.css'
+import { vars }              from '@ui/theme/src/theme.css'
 
 import { createShapeStyles } from '../utils'
 
