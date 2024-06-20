@@ -12,7 +12,7 @@ const primaryHoverStyles = createAppearanceStyles({
   backgroundColor: vars.colors.input.primary.hover.background,
 })
 
-const primaryFocusWithinStyles = createAppearanceStyles({
+const primaryFocusStyles = createAppearanceStyles({
   fontColor: vars.colors.input.primary.focus.font,
   backgroundColor: vars.colors.input.primary.focus.background,
 })
@@ -27,10 +27,22 @@ const primaryDisabledStyles = createAppearanceStyles({
   backgroundColor: vars.colors.input.primary.disabled.background,
 })
 
-export const primaryInputStyles = {
-  default: primaryDefaultStyles,
-  hover: primaryHoverStyles,
-  focus: primaryFocusWithinStyles,
-  active: primaryActiveStyles,
-  disabled: primaryDisabledStyles,
+export const appearanceVariant = {
+  blue: primaryDefaultStyles,
+}
+
+export const appearanceHover = {
+  blueHover: primaryHoverStyles,
+}
+
+export const appearanceFocus = {
+  bluePressed: primaryFocusStyles,
+}
+
+export const appearanceActive = {
+  bluePressed: primaryActiveStyles,
+}
+
+export const appearanceDisabled = {
+  blueDisabled: primaryDisabledStyles,
 }

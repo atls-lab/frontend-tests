@@ -1,6 +1,5 @@
-import { globalStyle }        from '@vanilla-extract/css'
-
-import { style } from '@vanilla-extract/css'
+import { globalStyle } from '@vanilla-extract/css'
+import { style }       from '@vanilla-extract/css'
 
 export const baseStyles = style({
   outline: 'none',
