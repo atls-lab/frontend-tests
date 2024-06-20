@@ -1,4 +1,4 @@
-import { style }           from '@vanilla-extract/css'
+import { style }            from '@vanilla-extract/css'
 
 import { InputShapeStyles } from './create-shape-styles.interfaces'
 
