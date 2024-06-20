@@ -3,7 +3,7 @@ import { RecipeVariants }       from '@vanilla-extract/recipes'
 import { ButtonHTMLAttributes } from 'react'
 import { PropsWithChildren }    from 'react'
 
-import { buttonStyles }         from './styles/styles.css'
+import { buttonStyles }         from './styles'
 
 export type ButtonVariants = Pick<
   NonNullable<RecipeVariants<typeof buttonStyles>>,
