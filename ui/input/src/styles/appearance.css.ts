@@ -1,4 +1,4 @@
-import { vars }                  from '@ui/theme/src/theme.css'
+import { vars }                   from '@ui/theme/src/theme.css'
 
 import { createAppearanceStyles } from '../utils'
 
