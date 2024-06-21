@@ -1,13 +1,11 @@
-import React                                       from 'react'
-
-import { CSSProperties }                    from 'react'
-
+import React                 from 'react'
+import { CSSProperties }     from 'react'
 import { PropsWithChildren } from 'react'
 
-import { vars }                                     from '@ui/theme/src/theme.css'
+import { vars }              from '@ui/theme/src/theme.css'
 
-import { ScrollbarProps }                           from './scrollbar.interfaces'
-import { baseStyles }                               from './scrollbar.styles.css'
+import { ScrollbarProps }    from './scrollbar.interfaces'
+import { baseStyles }        from './scrollbar.styles.css'
 
 export const ScrollbarElement: React.FC<PropsWithChildren<ScrollbarProps>> = ({
   children,
