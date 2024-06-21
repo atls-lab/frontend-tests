@@ -1782,6 +1782,7 @@ __metadata:
     "@ui/hello": "workspace:0.0.1"
     "@ui/input": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace:0.0.1"
     "@ui/scrollbar": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
     "@vanilla-extract/recipes": "npm:0.5.2"
@@ -3154,6 +3155,24 @@ __metadata:
     react: "*"
     react-dom: "*"
     styled-system: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/link@workspace:0.0.1, @ui/link@workspace:ui/link":
+  version: 0.0.0-use.local
+  resolution: "@ui/link@workspace:ui/link"
+  dependencies:
+    "@types/react": "npm:18.2.48"
+    "@ui/theme": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    next: "npm:14.1.0"
+    rainbow-sprinkles: "npm:0.17.2"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
