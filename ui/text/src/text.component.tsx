@@ -2,7 +2,7 @@ import React             from 'react'
 import { forwardRef }    from 'react'
 
 import { TextProps }     from './text.interfaces'
-import { textSprinkles } from './sprinkles.css'
+import { textSprinkles } from './text.css'
 
 export const Text = forwardRef<HTMLSpanElement, TextProps>(({ children, ...props }, ref) => {
   const { className, style, otherProps } = textSprinkles(props)

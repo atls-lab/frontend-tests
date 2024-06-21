@@ -1,6 +1,6 @@
 import { defineProperties } from 'rainbow-sprinkles'
 
-import { vars }             from '@ui/theme/src/theme.css'
+import { vars }             from '../theme.css'
 
 export const spaceProperties = defineProperties({
   dynamicProperties: {

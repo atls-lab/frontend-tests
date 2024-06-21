@@ -1,12 +1,14 @@
-import { style } from '@vanilla-extract/css'
+import { createRainbowSprinkles } from 'rainbow-sprinkles'
+import { defineProperties }       from 'rainbow-sprinkles'
 
-import { vars }  from '@ui/theme/src/theme.css'
+import { typographyProperties }   from '@ui/theme/src/properties'
 
-export const baseStyles = style({
-  display: 'inline-flex',
-  color: vars.colors.text.black,
-  fontWeight: vars.fontWeights.regular,
-  fontFamily: vars.fonts.primary,
-  fontSize: vars.fontSizes.medium,
-  lineHeight: vars.lineHeights.default,
+const textProperties = defineProperties({
+  dynamicProperties: {
+    cursor: true,
+  },
 })
+
+export const textSprinkles = createRainbowSprinkles(textProperties, typographyProperties)
+
+export type TextSprinkles = Parameters<typeof textSprinkles>[0]

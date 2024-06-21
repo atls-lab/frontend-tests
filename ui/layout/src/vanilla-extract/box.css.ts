@@ -1,8 +1,8 @@
 import { createRainbowSprinkles } from 'rainbow-sprinkles'
 
-import { flexboxProperties }      from './properties'
-import { layoutProperties }       from './properties'
-import { spaceProperties }        from './properties'
+import { flexboxProperties }      from '@ui/theme/src/properties'
+import { layoutProperties }       from '@ui/theme/src/properties'
+import { spaceProperties }        from '@ui/theme/src/properties'
 
 export const boxSprinkles = createRainbowSprinkles(
   layoutProperties,
