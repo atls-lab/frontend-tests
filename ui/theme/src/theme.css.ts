@@ -1,3 +1,5 @@
+import './global.css'
+
 import { createGlobalTheme } from '@vanilla-extract/css'
 
 import { colors }            from './theme'

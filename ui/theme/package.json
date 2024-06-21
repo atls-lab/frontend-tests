@@ -2,7 +2,7 @@
   "name": "@ui/theme",
   "version": "0.0.1",
   "license": "BSD-3-Clause",
-  "main": "src/index.ts",
+  "main": "src/theme.css.ts",
   "dependencies": {
     "rainbow-sprinkles": "0.17.2",
     "seamless-scroll-polyfill": "2.3.4"
