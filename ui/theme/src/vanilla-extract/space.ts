@@ -1,4 +1,4 @@
-export const space: Record<string, string> = {
+export const space = {
   zero: '0',
   g10: '10px',
   g12: '12px',
