@@ -169,10 +169,15 @@ __metadata:
   dependencies:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
+    "@ui/button": "workspace:0.0.1"
     "@ui/hello": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -189,6 +194,8 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
     "@ui/theme": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.15.3"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
     "@vanilla-extract/next-plugin": "npm:2.4.1"
     next: "npm:14.1.0"
     react: "npm:18.2.0"
@@ -1771,11 +1778,18 @@ __metadata:
   dependencies:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
+    "@ui/button": "workspace:0.0.1"
     "@ui/hello": "workspace:0.0.1"
+    "@ui/input": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/recipes": "npm:0.5.2"
+    "@vanilla-extract/sprinkles": "npm:1.6.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -1792,6 +1806,7 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
     "@ui/theme": "workspace:0.0.1"
+    "@vanilla-extract/webpack-plugin": "npm:2.3.10"
     next: "npm:14.1.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -3049,7 +3064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ui/button@workspace:ui/button":
+"@ui/button@workspace:0.0.1, @ui/button@workspace:ui/button":
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
   dependencies:
@@ -3060,6 +3075,8 @@ __metadata:
     "@vanilla-extract/recipes": "npm:0.5.2"
     "@vanilla-extract/sprinkles": "npm:1.6.1"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -3079,7 +3096,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/input@workspace:ui/input":
+"@ui/input@workspace:0.0.1, @ui/input@workspace:ui/input":
   version: 0.0.0-use.local
   resolution: "@ui/input@workspace:ui/input"
   dependencies:
@@ -3090,6 +3107,8 @@ __metadata:
     "@vanilla-extract/recipes": "npm:0.5.2"
     "@vanilla-extract/sprinkles": "npm:1.6.1"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -3105,28 +3124,35 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
     "@types/styled-system": "npm:5.1.22"
+    "@ui/theme": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
     csstype: "npm:3.1.2"
+    rainbow-sprinkles: "npm:0.17.2"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     styled-system: "npm:5.1.5"
   peerDependencies:
     "@emotion/react": "*"
     "@emotion/styled": "*"
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
     styled-system: "*"
   languageName: unknown
   linkType: soft
 
-"@ui/text@workspace:ui/text":
+"@ui/text@workspace:0.0.1, @ui/text@workspace:ui/text":
   version: 0.0.0-use.local
   resolution: "@ui/text@workspace:ui/text"
   dependencies:
     "@types/react": "npm:18.2.48"
     "@ui/theme": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
-    "@vanilla-extract/sprinkles": "npm:1.6.1"
+    rainbow-sprinkles: "npm:0.17.2"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -3139,10 +3165,13 @@ __metadata:
     "@emotion/react": "npm:11.11.3"
     "@types/react": "npm:18.2.48"
     "@vanilla-extract/css": "npm:1.15.2"
+    rainbow-sprinkles: "npm:0.17.2"
     react: "npm:18.2.0"
     seamless-scroll-polyfill: "npm:2.3.4"
   peerDependencies:
     "@emotion/react": "*"
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
   languageName: unknown
   linkType: soft
@@ -3213,6 +3242,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:1.15.3, @vanilla-extract/css@npm:^1.15.3":
+  version: 1.15.3
+  resolution: "@vanilla-extract/css@npm:1.15.3"
+  dependencies:
+    "@emotion/hash": "npm:^0.9.0"
+    "@vanilla-extract/private": "npm:^1.0.5"
+    css-what: "npm:^6.1.0"
+    cssesc: "npm:^3.0.0"
+    csstype: "npm:^3.0.7"
+    dedent: "npm:^1.5.3"
+    deep-object-diff: "npm:^1.1.9"
+    deepmerge: "npm:^4.2.2"
+    media-query-parser: "npm:^2.0.2"
+    modern-ahocorasick: "npm:^1.0.0"
+    picocolors: "npm:^1.0.0"
+  checksum: 3fde92f6582567d05b5f4d7bd914bac1f468056ecc154a489e39b70b0fba7039d96a14b8a6c7417b8c6533210aefed158043514b4d5d41cc3c6d50bff206410b
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/dynamic@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@vanilla-extract/dynamic@npm:2.1.1"
+  dependencies:
+    "@vanilla-extract/private": "npm:^1.0.5"
+  checksum: 31f9131f205bfd575a38b2ae535797413e9c6b1f1592da97038e3a827f9c497d7e8762a1e56882589cf24850d3acc5cdb5a69a61b2b117dc9e1214615a3d1590
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/integration@npm:^7.1.5":
   version: 7.1.5
   resolution: "@vanilla-extract/integration@npm:7.1.5"
@@ -3230,6 +3287,26 @@ __metadata:
     vite: "npm:^5.0.11"
     vite-node: "npm:^1.2.0"
   checksum: 3badc2712c6adc37169e9e14a5ffe98aa537af8d59ff039dec49079345f6e35d75d50c56533ff763aff007a6c3c6df0db9c7df26f5d835d67c4571f1e30f1826
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/integration@npm:^7.1.6":
+  version: 7.1.6
+  resolution: "@vanilla-extract/integration@npm:7.1.6"
+  dependencies:
+    "@babel/core": "npm:^7.23.9"
+    "@babel/plugin-syntax-typescript": "npm:^7.23.3"
+    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.6"
+    "@vanilla-extract/css": "npm:^1.15.3"
+    dedent: "npm:^1.5.3"
+    esbuild: "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
+    eval: "npm:0.1.8"
+    find-up: "npm:^5.0.0"
+    javascript-stringify: "npm:^2.0.1"
+    mlly: "npm:^1.4.2"
+    vite: "npm:^5.0.11"
+    vite-node: "npm:^1.2.0"
+  checksum: 52976b2caabd7e90a0cc3a95798ff3668ac71a6bd83c970e4016a4fb9f752881227f6814905f2df5d834942933dfdc363c9f18aa11217848e97df7ca36ddb687
   languageName: node
   linkType: hard
 
@@ -3266,6 +3343,20 @@ __metadata:
   peerDependencies:
     "@vanilla-extract/css": ^1.0.0
   checksum: a469f5a925da3cb0d23a83c77ce88779697143758c72000f3c4f9e4f4396035ae2a3a13d7d200e625c98952a1f375d83709817ff86fee039aa480840bd5a8888
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/webpack-plugin@npm:2.3.10":
+  version: 2.3.10
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.10"
+  dependencies:
+    "@vanilla-extract/integration": "npm:^7.1.6"
+    debug: "npm:^4.3.1"
+    loader-utils: "npm:^2.0.0"
+    picocolors: "npm:^1.0.0"
+  peerDependencies:
+    webpack: ^4.30.0 || ^5.20.2
+  checksum: 46d8449146ed6f7ed152d9e6fed05c49ee03a5d6dbe16e63c14903dd6025d89341ae881f12b6cfc01f6100395da200769a1c2561824c85e72006893d0a07d4ab
   languageName: node
   linkType: hard
 
@@ -9136,6 +9227,16 @@ __metadata:
   bin:
     qunit: bin/qunit.js
   checksum: 85a29c47b654e17ee7e8d0bb049cfb24600be0b6968b736dddb79a2887d246c4af73f022848fbb337c46f43b94ff020afa8067d1fd06f494cd8873ba0fbb1826
+  languageName: node
+  linkType: hard
+
+"rainbow-sprinkles@npm:0.17.2":
+  version: 0.17.2
+  resolution: "rainbow-sprinkles@npm:0.17.2"
+  peerDependencies:
+    "@vanilla-extract/css": ^1
+    "@vanilla-extract/dynamic": ^2
+  checksum: 9ca84affe20f70f3797cd69d3edace115017e92e2294f6d72fe4862703efe2364ff91f1f5e40c6d14b9096c7556d733633785c6747d9fad2c65e4e2ad8f17c06
   languageName: node
   linkType: hard
 

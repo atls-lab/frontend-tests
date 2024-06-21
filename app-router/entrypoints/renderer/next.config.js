@@ -2,6 +2,7 @@ import { join } from 'path'
 import { dirname } from 'path'
 
 import { fileURLToPath } from 'url'
+import { VanillaExtractPlugin } from '@vanilla-extract/webpack-plugin'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -18,6 +19,7 @@ export default {
   },
   webpack: (webpackConfig, { webpack }) => {
     webpackConfig.plugins.push(
+      new VanillaExtractPlugin(),
       new webpack.NormalModuleReplacementPlugin(new RegExp(/\.js$/), function (
         /** @type {{ request: string }} */
         resource
