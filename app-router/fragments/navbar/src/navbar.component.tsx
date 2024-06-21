@@ -1,6 +1,5 @@
 import React      from 'react'
 
-import { Hello }  from '@ui/hello'
 import { Box }    from '@ui/layout'
 import { Column } from '@ui/layout'
 
@@ -9,13 +8,12 @@ export const Navbar = () => (
     <Box
       justifyContent='center'
       alignItems='center'
-      padding='huge'
+      padding='$g24'
       backgroundColor='darkRed'
       border='boldLightGray'
       boxShadow='black.fifteenHundredthsTransparent'
     >
       IDENTITY
     </Box>
-    <Hello />
   </Column>
 )

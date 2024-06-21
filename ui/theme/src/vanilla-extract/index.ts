@@ -1,7 +1,0 @@
-export * from './fontSizes'
-export * from './colors'
-export * from './fontWeights'
-export * from './fonts.css'
-export * from './lineHeights'
-export * from './radii'
-export * from './space'
