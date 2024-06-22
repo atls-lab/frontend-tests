@@ -1,14 +1,31 @@
-import React            from 'react'
-import { forwardRef }   from 'react'
+import React                        from 'react'
+import { clsx }                     from 'clsx'
+import { forwardRef }               from 'react'
 
-import { BoxProps }     from './box.interfaces'
-import { boxSprinkles } from './box.css'
+import { BoxProps }                 from './box.interfaces'
+import { fillStyles }               from '../styles'
+import { fullViewportHeightStyles } from '../styles'
+import { fullViewportWidthStyles }  from '../styles'
+import { boxSprinkles }             from './box.css'
 
-export const Box = forwardRef<HTMLDivElement, BoxProps>(({ children, ...props }, ref) => {
+export const Box = forwardRef<HTMLDivElement, BoxProps>((
+  { children, fill, fullViewportWidth, fullViewportHeight, ...props },
+  ref
+) => {
   const { className, style, otherProps } = boxSprinkles(props)
 
   return (
-    <div ref={ref} className={className} style={{ ...style, ...otherProps?.style }} {...otherProps}>
+    <div
+      ref={ref}
+      className={clsx(
+        className,
+        fill && fillStyles,
+        fullViewportWidth && fullViewportWidthStyles,
+        fullViewportHeight && fullViewportHeightStyles
+      )}
+      style={{ ...style, ...otherProps?.style }}
+      {...otherProps}
+    >
       {children}
     </div>
   )
@@ -16,4 +33,5 @@ export const Box = forwardRef<HTMLDivElement, BoxProps>(({ children, ...props },
 
 Box.defaultProps = {
   display: 'flex',
+  boxSizing: 'border-box',
 }

@@ -5,6 +5,7 @@
   "dependencies": {
     "@atls-ui-parts/layout": "0.0.15",
     "@ui/theme": "workspace:0.0.1",
+    "clsx": "2.1.1",
     "rainbow-sprinkles": "0.17.2"
   },
   "devDependencies": {
