@@ -9,9 +9,9 @@ export const Navbar = () => (
       justifyContent='center'
       alignItems='center'
       padding='$g24'
-      backgroundColor='darkRed'
-      border='boldLightGray'
-      boxShadow='black.fifteenHundredthsTransparent'
+      backgroundColor='$text.red'
+      border='$normalGray'
+      boxShadow='$black'
     >
       IDENTITY
     </Box>
