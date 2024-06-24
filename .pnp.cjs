@@ -4023,6 +4023,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.2.48"],\
           ["@ui/theme", "virtual:700739ac49652955adb36b83c00f0bfd8a4349d905547fb1e280dc32d15102f448713d728fec44cd66638572245a7e7a6942b3e895e99d3144a35820521c1047#workspace:ui/theme"],\
           ["@vanilla-extract/css", "npm:1.14.2"],\
+          ["clsx", "npm:2.1.1"],\
           ["next", "virtual:77bf311a6543a80f771d580a75afd24454320054d1db30ce3ab911d3ca55fb188f2309ad8aa7dcfbcd75ff583d1144d26b9b446895bb8207e17bbd250129d96a#npm:14.1.0"],\
           ["rainbow-sprinkles", "virtual:700739ac49652955adb36b83c00f0bfd8a4349d905547fb1e280dc32d15102f448713d728fec44cd66638572245a7e7a6942b3e895e99d3144a35820521c1047#npm:0.17.2"]\
         ],\

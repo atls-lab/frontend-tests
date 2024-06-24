@@ -2951,6 +2951,7 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@ui/theme": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
+    clsx: "npm:2.1.1"
     next: "npm:14.1.0"
     rainbow-sprinkles: "npm:0.17.2"
   peerDependencies:
