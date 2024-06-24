@@ -3,28 +3,28 @@ import { vars }                   from '@ui/theme/src/theme.css'
 import { createAppearanceStyles } from '../utils'
 
 const primaryDefaultStyles = createAppearanceStyles({
-  fontColor: vars.colors.input.primary.default.font,
-  backgroundColor: vars.colors.input.primary.default.background,
+  fontColor: vars.colors['input.blue.default.font'],
+  backgroundColor: vars.colors['input.blue.default.background'],
 })
 
 const primaryHoverStyles = createAppearanceStyles({
-  fontColor: vars.colors.input.primary.hover.font,
-  backgroundColor: vars.colors.input.primary.hover.background,
+  fontColor: vars.colors['input.blue.hover.font'],
+  backgroundColor: vars.colors['input.blue.hover.font'],
 })
 
 const primaryFocusStyles = createAppearanceStyles({
-  fontColor: vars.colors.input.primary.focus.font,
-  backgroundColor: vars.colors.input.primary.focus.background,
+  fontColor: vars.colors['input.blue.focus.font'],
+  backgroundColor: vars.colors['input.blue.focus.font'],
 })
 
 const primaryActiveStyles = createAppearanceStyles({
-  fontColor: vars.colors.input.primary.active.font,
-  backgroundColor: vars.colors.input.primary.active.background,
+  fontColor: vars.colors['input.blue.active.font'],
+  backgroundColor: vars.colors['input.blue.active.font'],
 })
 
 const primaryDisabledStyles = createAppearanceStyles({
-  fontColor: vars.colors.input.primary.disabled.font,
-  backgroundColor: vars.colors.input.primary.disabled.background,
+  fontColor: vars.colors['input.blue.disabled.font'],
+  backgroundColor: vars.colors['input.blue.disabled.font'],
 })
 
 export const appearanceVariant = {
