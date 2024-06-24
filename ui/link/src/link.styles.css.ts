@@ -1,6 +1,7 @@
-import { createRainbowSprinkles }                   from 'rainbow-sprinkles'
+import { style }                   from '@vanilla-extract/css'
 
-import { defineProperties } from 'rainbow-sprinkles'
+import { createRainbowSprinkles } from 'rainbow-sprinkles'
+import { defineProperties }       from 'rainbow-sprinkles'
 
 const linkComponentProperties = defineProperties({
   dynamicProperties: {
@@ -12,3 +13,8 @@ const linkComponentProperties = defineProperties({
 export const linkSprinkles = createRainbowSprinkles(linkComponentProperties)
 
 export type LinkSprinkles = Parameters<typeof linkSprinkles>[0]
+
+export const baseLinkStyles = style({
+  cursor: 'pointer',
+  textDecoration: 'none',
+})

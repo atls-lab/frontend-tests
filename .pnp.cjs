@@ -3911,7 +3911,9 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/image", "workspace:ui/image"],\
           ["@types/react", "npm:18.2.48"],\
-          ["@vanilla-extract/css", "npm:1.14.2"]\
+          ["@vanilla-extract/css", "npm:1.14.2"],\
+          ["clsx", "npm:2.1.1"],\
+          ["rainbow-sprinkles", "virtual:700739ac49652955adb36b83c00f0bfd8a4349d905547fb1e280dc32d15102f448713d728fec44cd66638572245a7e7a6942b3e895e99d3144a35820521c1047#npm:0.17.2"]\
         ],\
         "linkType": "SOFT"\
       }]\

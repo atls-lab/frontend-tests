@@ -1,4 +1,6 @@
 export const colors = {
+  blue: 'rgba(65, 109, 223, 1)',
+
   'button.blue.default.font': 'rgba(255, 255, 255, 1)',
   'button.blue.default.background': 'rgba(65, 109, 223, 1)',
   'button.blue.default.border': 'rgba(0,0,0,0)',

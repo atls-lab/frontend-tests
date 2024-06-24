@@ -2893,6 +2893,8 @@ __metadata:
   dependencies:
     "@types/react": "npm:18.2.48"
     "@vanilla-extract/css": "npm:1.14.2"
+    clsx: "npm:2.1.1"
+    rainbow-sprinkles: "npm:0.17.2"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
