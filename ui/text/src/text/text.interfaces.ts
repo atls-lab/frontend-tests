@@ -6,4 +6,4 @@ import { TextSprinkles }     from './text.css'
 export interface TextProps
   extends PropsWithChildren,
     TextSprinkles,
-    HTMLAttributes<HTMLSpanElement> {}
+    Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {}

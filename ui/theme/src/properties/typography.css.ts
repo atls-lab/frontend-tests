@@ -11,6 +11,6 @@ export const typographyProperties = defineProperties({
     fontSize: vars.fontSizes,
     fontFamily: vars.fonts,
     fontWeight: vars.fontWeights,
-    lineHeights: vars.lineHeights,
+    lineHeight: vars.lineHeights,
   },
 })

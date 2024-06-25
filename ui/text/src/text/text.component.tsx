@@ -18,3 +18,12 @@ export const Text = forwardRef<HTMLSpanElement, TextProps>(({ children, ...props
     </span>
   )
 })
+
+Text.defaultProps = {
+  display: 'inline-flex',
+  color: '$text.black',
+  fontSize: '$medium',
+  fontWeight: '$regular',
+  fontFamily: '$primary',
+  lineHeight: '$default',
+}
