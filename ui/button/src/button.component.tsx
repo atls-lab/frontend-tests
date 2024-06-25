@@ -1,22 +1,16 @@
-import React                 from 'react'
-import { FC }                from 'react'
-import { PropsWithChildren } from 'react'
-import { useState }          from 'react'
+import React            from 'react'
+import { forwardRef }   from 'react'
+import { useState }     from 'react'
 
-import { useHover }          from '@ui/utils'
+import { useHover }     from '@ui/utils'
 
-import { ButtonProps }       from './button.interfaces'
-import { buttonStyles }      from './styles'
+import { ButtonProps }  from './button.interfaces'
+import { buttonStyles } from './styles'
 
-export const Button: FC<PropsWithChildren<ButtonProps>> = ({
-  children,
-  icon,
-  iconPlacement,
-  size = 'huge',
-  variant = 'blue',
-  disabled,
-  ...props
-}) => {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>((
+  { children, icon, iconPlacement, size = 'huge', variant = 'blue', disabled, ...props },
+  ref
+) => {
   const [pressed, setPressed] = useState<boolean>(false)
   const [hover, hoverProps] = useHover()
   const onMouseDown = () => setPressed(true)
@@ -24,6 +18,7 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
 
   return (
     <button
+      ref={ref}
       className={buttonStyles({
         size,
         variant,
@@ -40,4 +35,4 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
       {children}
     </button>
   )
-}
+})
