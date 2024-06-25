@@ -1,11 +1,10 @@
-import React                                   from 'react'
-import { PropsWithChildren }             from 'react'
-import { forwardRef } from 'react'
-import { clsx }                                 from 'clsx'
+import React                 from 'react'
+import { PropsWithChildren } from 'react'
+import { clsx }              from 'clsx'
+import { forwardRef }        from 'react'
 
-import { baseImageStyles }                      from './image.styles.css'
-
-import { imageSprinkles }      from './image.styles.css'
+import { baseImageStyles }   from './image.styles.css'
+import { imageSprinkles }    from './image.styles.css'
 
 interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {}
 
