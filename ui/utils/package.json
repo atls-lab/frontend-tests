@@ -4,6 +4,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@atls-ui-parts/select": "0.1.1",
+    "@atls-ui-parts/switch": "0.1.1",
     "@atls-utils/use-hover": "0.0.2"
   },
   "devDependencies": {

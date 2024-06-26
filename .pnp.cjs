@@ -531,6 +531,81 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@atls-ui-parts/switch", [\
+      ["npm:0.1.1", {\
+        "packageLocation": "./.yarn/cache/@atls-ui-parts-switch-npm-0.1.1-8284bcc81f-af1c1b0781.zip/node_modules/@atls-ui-parts/switch/",\
+        "packageDependencies": [\
+          ["@atls-ui-parts/switch", "npm:0.1.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:5e8079d8de770adb1d26357b902c6db49895b32347583217a31cd6776b358c0d2379137e0820fd4e83c5925bbc287f35daea6dbbf538a80bde224ce933cc5d38#npm:0.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/@atls-ui-parts-switch-virtual-45286929a7/0/cache/@atls-ui-parts-switch-npm-0.1.1-8284bcc81f-af1c1b0781.zip/node_modules/@atls-ui-parts/switch/",\
+        "packageDependencies": [\
+          ["@atls-ui-parts/switch", "virtual:5e8079d8de770adb1d26357b902c6db49895b32347583217a31cd6776b358c0d2379137e0820fd4e83c5925bbc287f35daea6dbbf538a80bde224ce933cc5d38#npm:0.1.1"],\
+          ["@emotion/react", null],\
+          ["@emotion/styled", null],\
+          ["@types/emotion__react", null],\
+          ["@types/emotion__styled", null],\
+          ["@types/framer-motion", null],\
+          ["@types/react", "npm:18.2.48"],\
+          ["@types/styled-system", null],\
+          ["@types/styled-tools", null],\
+          ["framer-motion", null],\
+          ["react", "npm:18.2.0"],\
+          ["styled-system", null],\
+          ["styled-tools", null]\
+        ],\
+        "packagePeers": [\
+          "@emotion/react",\
+          "@emotion/styled",\
+          "@types/emotion__react",\
+          "@types/emotion__styled",\
+          "@types/framer-motion",\
+          "@types/react",\
+          "@types/styled-system",\
+          "@types/styled-tools",\
+          "framer-motion",\
+          "react",\
+          "styled-system",\
+          "styled-tools"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/@atls-ui-parts-switch-virtual-7851a4ff97/0/cache/@atls-ui-parts-switch-npm-0.1.1-8284bcc81f-af1c1b0781.zip/node_modules/@atls-ui-parts/switch/",\
+        "packageDependencies": [\
+          ["@atls-ui-parts/switch", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.1.1"],\
+          ["@emotion/react", null],\
+          ["@emotion/styled", null],\
+          ["@types/emotion__react", null],\
+          ["@types/emotion__styled", null],\
+          ["@types/framer-motion", null],\
+          ["@types/react", "npm:18.2.48"],\
+          ["@types/styled-system", null],\
+          ["@types/styled-tools", null],\
+          ["framer-motion", null],\
+          ["react", null],\
+          ["styled-system", null],\
+          ["styled-tools", null]\
+        ],\
+        "packagePeers": [\
+          "@emotion/react",\
+          "@emotion/styled",\
+          "@types/emotion__react",\
+          "@types/emotion__styled",\
+          "@types/framer-motion",\
+          "@types/react",\
+          "@types/styled-system",\
+          "@types/styled-tools",\
+          "framer-motion",\
+          "react",\
+          "styled-system",\
+          "styled-tools"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@atls-utils/use-hover", [\
       ["npm:0.0.2", {\
         "packageLocation": "./.yarn/cache/@atls-utils-use-hover-npm-0.0.2-b5fd27e7ba-2c85f1b9bc.zip/node_modules/@atls-utils/use-hover/",\
@@ -4425,6 +4500,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/utils", "virtual:15699eff50cdad5be53dd471db15a8d525268dafd2640adb0f60e74bf048bf568fcc363c5b731f140fcb53cab5abe2a3eebbd84bfb6f92a886f73ea83a89db38#workspace:ui/utils"],\
           ["@atls-ui-parts/select", "virtual:5e8079d8de770adb1d26357b902c6db49895b32347583217a31cd6776b358c0d2379137e0820fd4e83c5925bbc287f35daea6dbbf538a80bde224ce933cc5d38#npm:0.1.1"],\
+          ["@atls-ui-parts/switch", "virtual:5e8079d8de770adb1d26357b902c6db49895b32347583217a31cd6776b358c0d2379137e0820fd4e83c5925bbc287f35daea6dbbf538a80bde224ce933cc5d38#npm:0.1.1"],\
           ["@atls-utils/use-hover", "virtual:5e8079d8de770adb1d26357b902c6db49895b32347583217a31cd6776b358c0d2379137e0820fd4e83c5925bbc287f35daea6dbbf538a80bde224ce933cc5d38#npm:0.0.2"],\
           ["@types/react", "npm:18.2.48"],\
           ["@types/react-dom", "npm:18.2.18"],\
@@ -4444,6 +4520,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/utils", "virtual:2feb9cc9c125883d3a6b04f32f2a84354799208a4ed521d0c3f302e72125a16d693884f557876b86c9ead87c08d5a3eb6329abe93af10ea8b33ac31410df4ce1#workspace:ui/utils"],\
           ["@atls-ui-parts/select", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.1.1"],\
+          ["@atls-ui-parts/switch", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.1.1"],\
           ["@atls-utils/use-hover", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.0.2"],\
           ["@types/react", "npm:18.2.48"],\
           ["@types/react-dom", null],\
@@ -4463,6 +4540,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/utils", "workspace:ui/utils"],\
           ["@atls-ui-parts/select", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.1.1"],\
+          ["@atls-ui-parts/switch", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.1.1"],\
           ["@atls-utils/use-hover", "virtual:d408ff927ec20bf2ba966241203700305c6479a45379162b869b3fc886a390b56fe623423728d72f446eebdf005c5cf8a0789c0d40bc6776a747cf90efb9e3c9#npm:0.0.2"],\
           ["@types/react", "npm:18.2.48"]\
         ],\

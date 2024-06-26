@@ -9,7 +9,7 @@ import { baseThumbStyles }     from './thumb.styles.css'
 import { disabledThumbStyles } from './thumb.styles.css'
 import { thumbSprinkles }      from './thumb.styles.css'
 
-const Thumb: React.FC<ThumbElementProps & ThumbSprinkles> = ({ checked, disabled, ...props }) => {
+export const Thumb: React.FC<ThumbElementProps & ThumbSprinkles> = ({ checked, disabled, ...props }) => {
   const initial = useMemo(() => (checked ? 'checked' : 'visible'), [checked])
   const { className, style, otherProps } = thumbSprinkles(props)
 

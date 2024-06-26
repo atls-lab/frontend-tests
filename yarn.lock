@@ -254,6 +254,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-parts/switch@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@atls-ui-parts/switch@npm:0.1.1"
+  peerDependencies:
+    "@emotion/react": 11.11.3
+    "@emotion/styled": 11.11.0
+    framer-motion: 10.16.1
+    react: 18.2.0
+    styled-system: 5.1.5
+    styled-tools: 1.7.2
+  checksum: af1c1b0781138d610ec5858e74fa1826579b08bedde09e6b6dcf18f9ce7a038e9127c67bb4646b514d1e3992092982bb5aaf52cddeaff9f338a2be7f74af861a
+  languageName: node
+  linkType: hard
+
 "@atls-utils/use-hover@npm:0.0.2":
   version: 0.0.2
   resolution: "@atls-utils/use-hover@npm:0.0.2"
@@ -3110,6 +3124,7 @@ __metadata:
   resolution: "@ui/utils@workspace:ui/utils"
   dependencies:
     "@atls-ui-parts/select": "npm:0.1.1"
+    "@atls-ui-parts/switch": "npm:0.1.1"
     "@atls-utils/use-hover": "npm:0.0.2"
     "@types/react": "npm:18.2.48"
   peerDependencies:
