@@ -1,10 +1,9 @@
-import { style }                                    from '@vanilla-extract/css'
+import { style }                  from '@vanilla-extract/css'
 
-import { createRainbowSprinkles }                   from 'rainbow-sprinkles'
+import { createRainbowSprinkles } from 'rainbow-sprinkles'
+import { defineProperties }       from 'rainbow-sprinkles'
 
-import { defineProperties } from 'rainbow-sprinkles'
-
-import { vars }                                     from '@ui/theme'
+import { vars }                   from '@ui/theme'
 
 export const baseHandleStyles = style({
   position: 'relative',

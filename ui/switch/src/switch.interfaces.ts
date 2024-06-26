@@ -1,5 +1,6 @@
 import { OnChangeCallback }  from '@ui/utils'
-import {ThumbElementProps} from "./thumb";
+
+import { ThumbElementProps } from './thumb'
 
 export interface SwitchCallbackProps {
   onChange?: OnChangeCallback
