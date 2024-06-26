@@ -1,15 +1,14 @@
-import React                                from 'react'
-import { clsx }                              from 'clsx'
-import { motion }                           from 'framer-motion'
+import React                 from 'react'
+import { clsx }              from 'clsx'
+import { motion }            from 'framer-motion'
 
-import { useSelect }                         from '@ui/utils'
+import { useSelect }         from '@ui/utils'
 
-import { MenuItem }                          from './item'
-import { SelectProps }                       from './select.interfaces'
-import { baseButtonStyles }                  from './button'
-import { baseMenuSprinkles }                 from './menu'
-
-import { baseMenuStyles } from './menu'
+import { MenuItem }          from './item'
+import { SelectProps }       from './select.interfaces'
+import { baseButtonStyles }  from './button'
+import { baseMenuSprinkles } from './menu'
+import { baseMenuStyles }    from './menu'
 
 export const Select: React.FC<SelectProps> = ({
   items,

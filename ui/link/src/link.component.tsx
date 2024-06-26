@@ -11,10 +11,10 @@ import { LinkSprinkles }     from './link.styles.css'
 import { baseLinkStyles }    from './link.styles.css'
 import { linkSprinkles }     from './link.styles.css'
 
-export const Link: React.FC<LinkProps> = forwardRef<
-  HTMLAnchorElement,
-  PropsWithChildren<LinkProps & LinkSprinkles>
->(({ children, path, ...props }, ref) => {
+export const Link = forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps & LinkSprinkles>>((
+  { children, path, ...props },
+  ref
+) => {
   const { className, style, otherProps } = linkSprinkles(props)
 
   return (
