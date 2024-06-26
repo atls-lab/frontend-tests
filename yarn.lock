@@ -197,7 +197,6 @@ __metadata:
     next: "npm:14.1.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
-    styled-system: "npm:5.1.5"
     typescript: "npm:5.2.2"
   languageName: unknown
   linkType: soft
@@ -208,63 +207,6 @@ __metadata:
   dependencies:
     grapheme-splitter: "npm:^1.0.4"
   checksum: 14ed60cb45750d386c64229ac7bab20e10eedc193503fa4decff764162d329d6d3363ed2cd3debec833186ee54affe4f824f6e8eff531295117fd1ebda200270
-  languageName: node
-  linkType: hard
-
-"@atls-ui-parts/layout@npm:0.0.15":
-  version: 0.0.15
-  resolution: "@atls-ui-parts/layout@npm:0.0.15"
-  dependencies:
-    "@emotion/is-prop-valid": "npm:1.2.1"
-    csstype: "npm:3.1.3"
-  peerDependencies:
-    "@emotion/react": 11.9.3
-    "@emotion/styled": 11.9.3
-    react: 18.2.0
-    styled-system: 5.1.5
-  checksum: 181669cff84cec8c7f84c3ddfd5a24907ba83633db906af54d121f85c014be06e3bd34dd0d269a3b9b7dac61b3eb72316b4c31c1367680be437f776ebd7fee3a
-  languageName: node
-  linkType: hard
-
-"@atls-ui-parts/select@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@atls-ui-parts/select@npm:0.1.1"
-  dependencies:
-    "@atls-ui-parts/styles": "npm:0.1.1"
-    downshift: "npm:7.6.2"
-  peerDependencies:
-    "@emotion/react": 11.11.3
-    "@emotion/styled": 11.11.0
-    framer-motion: 10.16.1
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-laag: 2.0.5
-    styled-system: 5.1.5
-    styled-tools: 1.7.2
-  checksum: 6fa43c5b56b4152d9117f3c475599c6be52ee5df4223e2f0f56450931cfcd2753175a7d3db7099c2e1176a92682a908a2c4c44c13b67831f0fd95656b1949a41
-  languageName: node
-  linkType: hard
-
-"@atls-ui-parts/styles@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@atls-ui-parts/styles@npm:0.1.1"
-  peerDependencies:
-    styled-system: 5.1.5
-  checksum: a275b47e183ea7cdde78fa4bf2f42787b8e256a02ed3ab13c8bbb685e70349c7522d1b2042ea9bc72918a0b3e4360025de769441f07c67a9fa0ab917b3a6e2e7
-  languageName: node
-  linkType: hard
-
-"@atls-ui-parts/switch@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@atls-ui-parts/switch@npm:0.1.1"
-  peerDependencies:
-    "@emotion/react": 11.11.3
-    "@emotion/styled": 11.11.0
-    framer-motion: 10.16.1
-    react: 18.2.0
-    styled-system: 5.1.5
-    styled-tools: 1.7.2
-  checksum: af1c1b0781138d610ec5858e74fa1826579b08bedde09e6b6dcf18f9ce7a038e9127c67bb4646b514d1e3992092982bb5aaf52cddeaff9f338a2be7f74af861a
   languageName: node
   linkType: hard
 
@@ -1190,15 +1132,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:1.2.1":
-  version: 1.2.1
-  resolution: "@emotion/is-prop-valid@npm:1.2.1"
-  dependencies:
-    "@emotion/memoize": "npm:^0.8.1"
-  checksum: fe231c472d38b3bbe519bcc9a5585cd41c45604147f3a065e333caf0f695d668aa21bc4229e657c1b6ea7398e096899e6ad54662548c73f11f6ba594aebd76a1
-  languageName: node
-  linkType: hard
-
 "@emotion/jest@npm:11.9.1":
   version: 11.9.1
   resolution: "@emotion/jest@npm:11.9.1"
@@ -1640,6 +1573,8 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -1655,6 +1590,8 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -1669,11 +1606,12 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
     "@ui/theme": "workspace:0.0.1"
-    "@vanilla-extract/webpack-plugin": "npm:2.3.10"
+    "@vanilla-extract/css": "npm:1.15.3"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
+    "@vanilla-extract/next-plugin": "npm:2.4.1"
     next: "npm:14.1.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
-    styled-system: "npm:5.1.5"
     typescript: "npm:5.2.2"
   languageName: unknown
   linkType: soft
@@ -2344,122 +2282,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@styled-system/background@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/background@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 8874bc2f99663a51fe8c50389a2f52d9b082191d6b3a3dfea20589bf738763735e6cec16189f1cea23a7e3fec726dc324d1f2f84ccef7474f1d5efab3ded89c7
-  languageName: node
-  linkType: hard
-
-"@styled-system/border@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "@styled-system/border@npm:5.1.5"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 6070fbe468ba212da9872db9a239028c09673c033022a08c28134eaf6c0bbca174312c4b5020638308ae099e350043d8f19967cef390afd01e03f41ee8bccf7d
-  languageName: node
-  linkType: hard
-
-"@styled-system/color@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/color@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 16750fbc9e8c8e06f64a6a9cc82388be8c724190b669529c649f1af675f7dcb3dbf712fa6848e9731e81e5b540f2ef1882495c93eb6488b47a3fbf6d7b66e412
-  languageName: node
-  linkType: hard
-
-"@styled-system/core@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/core@npm:5.1.2"
-  dependencies:
-    object-assign: "npm:^4.1.1"
-  checksum: 8c08abc753182d9b8f502f8d33f4608c31475e22dbfe07b6c394de982279c99199f8584286c396470fb17baa5e68fd3ff41c493717429e3a7155ea34a53eff62
-  languageName: node
-  linkType: hard
-
-"@styled-system/css@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "@styled-system/css@npm:5.1.5"
-  checksum: df37fcf0580f4399cda6cca7be128550434525ea5295d0a5b0f412b15778496b6256cff0a14582a0aa27e042c37be58799db67a8a4533ff2def1773fd526e076
-  languageName: node
-  linkType: hard
-
-"@styled-system/flexbox@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/flexbox@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 43c357b845e0f6bdef2962b7f4caf02753f0ed064c2340a0c4f8abe5425941df3c8ae1b7d95b5f2291bd93e2e6f67a085f155e71258b5795588d02ae71f50392
-  languageName: node
-  linkType: hard
-
-"@styled-system/grid@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/grid@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 09d3317cf62dbd40ced1d0560f9f02c21d1b8f7f1bfa2b30dcd35e0a8cde93bbeadc66b3865e62d5cbde4a9b868a60b7a1477ad6f167862fdfead0c539438cbf
-  languageName: node
-  linkType: hard
-
-"@styled-system/layout@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/layout@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 0ffbc1cf323adab7f4048a89961a3ebde6861588b6844dc76f4f089dcf1d2fec5326bafbc137e52573dc55d599cd99f0760544d1ea7021889c3e639ae6485e87
-  languageName: node
-  linkType: hard
-
-"@styled-system/position@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/position@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: bf659a45fd029e6e39950dd63f1f139a4908075cc87fe50c0c6136d6eb69dc0ce6a6fdbf8fef2acabcc4ec216288b3a128a7fa39dcd2b489f2b33c8e9b38b03c
-  languageName: node
-  linkType: hard
-
-"@styled-system/shadow@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/shadow@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 6b13e35f7d2a668c152d2b9778afff94bbf25d7422c96c44cfdc81ef3b9847c6495758b3b0bc1fda946e3056dcf643d7e3b7560841b9b55c06407e20a53514fa
-  languageName: node
-  linkType: hard
-
-"@styled-system/space@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/space@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: 8946919fd9ac66807668586e782986aba2072712e73121209e6ca871191dab3c15df7c12feff66a076c3aa23711fa1f2f3c295fd02523bcf389efcb8e67676e9
-  languageName: node
-  linkType: hard
-
-"@styled-system/typography@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@styled-system/typography@npm:5.1.2"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-  checksum: fc931c8a015824ea0871932a4f3ba98bd5b27fdaf3a08f2ce0b08e6a83ec4d55ec059b896248cf92aaeeaf9fd465a2a632b3d50c97fd462c67354b91207e8cad
-  languageName: node
-  linkType: hard
-
-"@styled-system/variant@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "@styled-system/variant@npm:5.1.5"
-  dependencies:
-    "@styled-system/core": "npm:^5.1.2"
-    "@styled-system/css": "npm:^5.1.5"
-  checksum: 170b7dd0ab48ddf5d59e17345438859b42ef62fc88d1a00530649ee12245e5c96a5124963230cf170de81934c039530a75d522e55a3a9d2767f3ce7f3aff3974
-  languageName: node
-  linkType: hard
-
 "@swc/helpers@npm:0.5.2":
   version: 0.5.2
   resolution: "@swc/helpers@npm:0.5.2"
@@ -2759,15 +2581,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-system@npm:5.1.22":
-  version: 5.1.22
-  resolution: "@types/styled-system@npm:5.1.22"
-  dependencies:
-    csstype: "npm:^3.0.2"
-  checksum: 61aa4d7ffa4667cae507540d82c187b4025e1da4d32a203376e191d1a34f09c0c8e36f112581d4261dac40373c9d57a01ff447b85b2fd6cddc3c72b619785086
-  languageName: node
-  linkType: hard
-
 "@types/treeify@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/treeify@npm:1.0.0"
@@ -2929,7 +2742,6 @@ __metadata:
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
     "@vanilla-extract/recipes": "npm:0.5.2"
-    "@vanilla-extract/sprinkles": "npm:1.6.1"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -2975,7 +2787,6 @@ __metadata:
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
     "@vanilla-extract/recipes": "npm:0.5.2"
-    "@vanilla-extract/sprinkles": "npm:1.6.1"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -2988,24 +2799,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
-    "@atls-ui-parts/layout": "npm:0.0.15"
     "@types/react": "npm:18.2.48"
-    "@types/react-dom": "npm:18.2.18"
-    "@types/styled-system": "npm:5.1.22"
     "@ui/theme": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
     clsx: "npm:2.1.1"
-    csstype: "npm:3.1.2"
     rainbow-sprinkles: "npm:0.17.2"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    styled-system: "npm:5.1.5"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
     react: "*"
     react-dom: "*"
-    styled-system: "*"
   languageName: unknown
   linkType: soft
 
@@ -3052,8 +2855,6 @@ __metadata:
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
-    "@vanilla-extract/recipes": "npm:0.5.2"
-    "@vanilla-extract/sprinkles": "npm:1.6.1"
     clsx: "npm:2.1.1"
     framer-motion: "npm:11.2.11"
     rainbow-sprinkles: "npm:0.17.2"
@@ -3073,8 +2874,6 @@ __metadata:
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
-    "@vanilla-extract/recipes": "npm:0.5.2"
-    "@vanilla-extract/sprinkles": "npm:1.6.1"
     clsx: "npm:2.1.1"
     framer-motion: "npm:11.2.11"
     rainbow-sprinkles: "npm:0.17.2"
@@ -3110,8 +2909,6 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@vanilla-extract/css": "npm:1.15.2"
     rainbow-sprinkles: "npm:0.17.2"
-    react: "npm:18.2.0"
-    seamless-scroll-polyfill: "npm:2.3.4"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -3123,10 +2920,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/utils@workspace:ui/utils"
   dependencies:
-    "@atls-ui-parts/select": "npm:0.1.1"
-    "@atls-ui-parts/switch": "npm:0.1.1"
     "@atls-utils/use-hover": "npm:0.0.2"
     "@types/react": "npm:18.2.48"
+    downshift: "npm:7.6.2"
+    framer-motion: "npm:11.2.11"
+    react-laag: "npm:2.0.5"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -3187,7 +2985,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.15.3, @vanilla-extract/css@npm:^1.15.3":
+"@vanilla-extract/css@npm:1.15.3":
   version: 1.15.3
   resolution: "@vanilla-extract/css@npm:1.15.3"
   dependencies:
@@ -3235,26 +3033,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^7.1.6":
-  version: 7.1.6
-  resolution: "@vanilla-extract/integration@npm:7.1.6"
-  dependencies:
-    "@babel/core": "npm:^7.23.9"
-    "@babel/plugin-syntax-typescript": "npm:^7.23.3"
-    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.6"
-    "@vanilla-extract/css": "npm:^1.15.3"
-    dedent: "npm:^1.5.3"
-    esbuild: "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
-    eval: "npm:0.1.8"
-    find-up: "npm:^5.0.0"
-    javascript-stringify: "npm:^2.0.1"
-    mlly: "npm:^1.4.2"
-    vite: "npm:^5.0.11"
-    vite-node: "npm:^1.2.0"
-  checksum: 52976b2caabd7e90a0cc3a95798ff3668ac71a6bd83c970e4016a4fb9f752881227f6814905f2df5d834942933dfdc363c9f18aa11217848e97df7ca36ddb687
-  languageName: node
-  linkType: hard
-
 "@vanilla-extract/next-plugin@npm:2.4.1":
   version: 2.4.1
   resolution: "@vanilla-extract/next-plugin@npm:2.4.1"
@@ -3279,29 +3057,6 @@ __metadata:
   peerDependencies:
     "@vanilla-extract/css": ^1.0.0
   checksum: 6e0c2f9d43a2677327f84394c4ff9d676d56286f62991a0f8b147c6d2d79c1948ce6395f31032d3d3dfaea03b48c2a5bbd947a05e09e771911e6ffb5cb20ca00
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/sprinkles@npm:1.6.1":
-  version: 1.6.1
-  resolution: "@vanilla-extract/sprinkles@npm:1.6.1"
-  peerDependencies:
-    "@vanilla-extract/css": ^1.0.0
-  checksum: a469f5a925da3cb0d23a83c77ce88779697143758c72000f3c4f9e4f4396035ae2a3a13d7d200e625c98952a1f375d83709817ff86fee039aa480840bd5a8888
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/webpack-plugin@npm:2.3.10":
-  version: 2.3.10
-  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.10"
-  dependencies:
-    "@vanilla-extract/integration": "npm:^7.1.6"
-    debug: "npm:^4.3.1"
-    loader-utils: "npm:^2.0.0"
-    picocolors: "npm:^1.0.0"
-  peerDependencies:
-    webpack: ^4.30.0 || ^5.20.2
-  checksum: 46d8449146ed6f7ed152d9e6fed05c49ee03a5d6dbe16e63c14903dd6025d89341ae881f12b6cfc01f6100395da200769a1c2561824c85e72006893d0a07d4ab
   languageName: node
   linkType: hard
 
@@ -5239,14 +4994,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:3.1.2":
-  version: 3.1.2
-  resolution: "csstype@npm:3.1.2"
-  checksum: 1f39c541e9acd9562996d88bc9fb62d1cb234786ef11ed275567d4b2bd82e1ceacde25debc8de3d3b4871ae02c2933fa02614004c97190711caebad6347debc2
-  languageName: node
-  linkType: hard
-
-"csstype@npm:3.1.3, csstype@npm:^3.0.2, csstype@npm:^3.0.7":
+"csstype@npm:^3.0.2, csstype@npm:^3.0.7":
   version: 3.1.3
   resolution: "csstype@npm:3.1.3"
   checksum: f593cce41ff5ade23f44e77521e3a1bcc2c64107041e1bf6c3c32adc5187d0d60983292fda326154d20b01079e24931aa5b08e4467cc488b60bb1e7f6d478ade
@@ -9697,13 +9445,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"seamless-scroll-polyfill@npm:2.3.4":
-  version: 2.3.4
-  resolution: "seamless-scroll-polyfill@npm:2.3.4"
-  checksum: 9e0111481d8b5829cd69dd17f920befafa627521f371490a2946fdfc4a775196425407ed0805353f9148e2a38cb1feff81d4724f00a5e5efb142ce1a7b7f6afe
-  languageName: node
-  linkType: hard
-
 "semver@npm:^6.0.0, semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0"
@@ -10185,27 +9926,6 @@ __metadata:
     babel-plugin-macros:
       optional: true
   checksum: 4f6a5d0010770fdeea1183d919d528fd46c484e23c0535ef3e1dd49488116f639c594f3bd4440e3bc8a8686c9f8d53c5761599870ff039ede11a5c3bfe08a4be
-  languageName: node
-  linkType: hard
-
-"styled-system@npm:5.1.5":
-  version: 5.1.5
-  resolution: "styled-system@npm:5.1.5"
-  dependencies:
-    "@styled-system/background": "npm:^5.1.2"
-    "@styled-system/border": "npm:^5.1.5"
-    "@styled-system/color": "npm:^5.1.2"
-    "@styled-system/core": "npm:^5.1.2"
-    "@styled-system/flexbox": "npm:^5.1.2"
-    "@styled-system/grid": "npm:^5.1.2"
-    "@styled-system/layout": "npm:^5.1.2"
-    "@styled-system/position": "npm:^5.1.2"
-    "@styled-system/shadow": "npm:^5.1.2"
-    "@styled-system/space": "npm:^5.1.2"
-    "@styled-system/typography": "npm:^5.1.2"
-    "@styled-system/variant": "npm:^5.1.5"
-    object-assign: "npm:^4.1.1"
-  checksum: 2d4df92d78161cb4ba357118c6fb5764d2bc723cc2cbb8e447b5789aeabb542e65e73f9f6a2c829d581f59653be9c1a9c2880056669371641b1c964c6b2b5de7
   languageName: node
   linkType: hard
 

@@ -12,6 +12,8 @@
     "react-dom": "18.2.0"
   },
   "peerDependencies": {
+    "@vanilla-extract/css": "*",
+    "@vanilla-extract/dynamic": "*",
     "react": "*",
     "react-dom": "*"
   }

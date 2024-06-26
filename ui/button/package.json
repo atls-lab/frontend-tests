@@ -8,8 +8,7 @@
   "dependencies": {
     "@ui/theme": "workspace:0.0.1",
     "@ui/utils": "workspace:0.0.1",
-    "@vanilla-extract/recipes": "0.5.2",
-    "@vanilla-extract/sprinkles": "1.6.1"
+    "@vanilla-extract/recipes": "0.5.2"
   },
   "devDependencies": {
     "@types/react": "18.2.48",

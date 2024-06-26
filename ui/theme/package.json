@@ -4,13 +4,11 @@
   "license": "BSD-3-Clause",
   "main": "src/theme.css.ts",
   "dependencies": {
-    "rainbow-sprinkles": "0.17.2",
-    "seamless-scroll-polyfill": "2.3.4"
+    "rainbow-sprinkles": "0.17.2"
   },
   "devDependencies": {
     "@types/react": "18.2.48",
-    "@vanilla-extract/css": "1.15.2",
-    "react": "18.2.0"
+    "@vanilla-extract/css": "1.15.2"
   },
   "peerDependencies": {
     "@vanilla-extract/css": "*",
