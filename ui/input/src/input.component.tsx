@@ -12,6 +12,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((
 ) => (
   <input
     ref={ref}
+    value={value}
+    type={type}
     className={inputStyles({
       size,
       variant,
