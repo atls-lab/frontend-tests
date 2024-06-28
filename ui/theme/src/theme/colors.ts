@@ -1,6 +1,8 @@
 export const colors = {
   blue: 'rgba(65, 109, 223, 1)',
   white: 'rgba(255, 255, 255, 1)',
+  gray: 'rgba(245, 245, 245, 1)',
+  blackThreeQuarters: 'rgba(0, 0, 0, 0.75)',
 
   'button.blue.default.font': 'rgba(255, 255, 255, 1)',
   'button.blue.default.background': 'rgba(65, 109, 223, 1)',
