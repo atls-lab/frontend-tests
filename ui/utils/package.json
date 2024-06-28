@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@atls-utils/use-hover": "0.0.2",
     "downshift": "7.6.2",
     "framer-motion": "11.2.11",
     "react-laag": "2.0.5"
