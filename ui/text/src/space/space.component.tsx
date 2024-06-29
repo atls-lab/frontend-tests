@@ -1,4 +1,5 @@
 import React              from 'react'
+import { clsx }           from 'clsx'
 import { forwardRef }     from 'react'
 
 import { SYMBOL_SPACE }   from './space.constants'
@@ -11,9 +12,9 @@ export const Space = forwardRef<HTMLSpanElement, SpaceProps>(({ count = 1, ...pr
   return (
     <span
       ref={ref}
-      className={className}
-      style={{ ...style, ...otherProps?.style }}
       {...otherProps}
+      className={clsx(className, otherProps?.className)}
+      style={{ ...style, ...otherProps?.style }}
     >
       {SYMBOL_SPACE.repeat(count)}
     </span>

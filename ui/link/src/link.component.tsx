@@ -21,9 +21,9 @@ export const Link = forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps & 
     <NextLink href={path}>
       <a
         ref={ref}
-        className={clsx(baseLinkStyles, className)}
-        style={{ ...style, ...otherProps?.style }}
         {...otherProps}
+        className={clsx(baseLinkStyles, otherProps?.className, className)}
+        style={{ ...style, ...otherProps?.style }}
       >
         {children}
       </a>

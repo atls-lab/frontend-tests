@@ -1,4 +1,5 @@
 import React             from 'react'
+import clsx              from 'clsx'
 import { forwardRef }    from 'react'
 
 import { TextProps }     from './text.interfaces'
@@ -10,9 +11,9 @@ export const Text = forwardRef<HTMLSpanElement, TextProps>(({ children, ...props
   return (
     <span
       ref={ref}
-      className={className}
-      style={{ ...style, ...otherProps?.style }}
       {...otherProps}
+      className={clsx(className, otherProps?.className)}
+      style={{ ...style, ...otherProps?.style }}
     >
       {children}
     </span>

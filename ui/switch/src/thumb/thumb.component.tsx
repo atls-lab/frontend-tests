@@ -21,9 +21,9 @@ export const Thumb: React.FC<ThumbElementProps & ThumbSprinkles> = ({
     <motion.span
       initial={initial}
       animate={checked ? 'checked' : 'visible'}
-      className={clsx(baseThumbStyles, disabledThumbStyles, className)}
-      style={{ ...style, ...otherProps?.style }}
       {...otherProps}
+      className={clsx(baseThumbStyles, disabledThumbStyles, otherProps?.className, className)}
+      style={{ ...style, ...otherProps?.style }}
     />
   )
 }

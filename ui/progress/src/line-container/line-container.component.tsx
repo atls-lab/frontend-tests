@@ -17,13 +17,14 @@ export const LineContainer = forwardRef<HTMLDivElement, LineContainerProps>((
   return (
     <div
       ref={ref}
+      {...otherProps}
       className={clsx(
         className,
+        otherProps?.className,
         baseLineContainerStyles,
         trailLinecap === 'round' ? roundLineContainerStyles : squareLineContainerStyles
       )}
       style={{ ...style, ...otherProps?.style }}
-      {...otherProps}
     >
       {children}
     </div>

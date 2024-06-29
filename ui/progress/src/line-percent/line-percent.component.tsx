@@ -17,13 +17,14 @@ export const LinePercent = forwardRef<HTMLDivElement, LinePercentProps>((
   return (
     <div
       ref={ref}
+      {...otherProps}
       className={clsx(
         className,
+        otherProps?.className,
         baseLinePercentStyles,
         strokeLinecap === 'round' ? roundLinePercentStyles : squareLinePercentStyles
       )}
       style={{ ...style, ...otherProps?.style }}
-      {...otherProps}
     >
       {children}
     </div>

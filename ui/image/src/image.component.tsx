@@ -23,8 +23,8 @@ export const Image = forwardRef<HTMLImageElement, PropsWithChildren<ImageProps>>
       ref={ref}
       className={clsx(baseImageStyles, className)}
       alt={alt}
-      style={{ ...style, ...otherProps?.style }}
       {...props}
+      style={{ ...style, ...otherProps?.style }}
       width={width}
       height={height}
     />

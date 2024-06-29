@@ -34,9 +34,9 @@ export const Select: React.FC<SelectProps> = ({
       </button>
       {renderMenu(
         <motion.ul
-          className={clsx(baseMenuStyles, className)}
-          style={{ ...style, ...otherProps?.style }}
           {...otherProps}
+          className={clsx(baseMenuStyles, otherProps?.className, className)}
+          style={{ ...style, ...otherProps?.style }}
           {...menuProps}
         >
           {items.map((item, index) => (

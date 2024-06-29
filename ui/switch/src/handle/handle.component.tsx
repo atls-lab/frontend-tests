@@ -9,9 +9,9 @@ export const Handle = ({ children, ...props }) => {
 
   return (
     <button
-      className={clsx(baseHandleStyles, className)}
-      style={{ ...style, ...otherProps?.style }}
       {...otherProps}
+      className={clsx(baseHandleStyles, otherProps?.className, className)}
+      style={{ ...style, ...otherProps?.style }}
     >
       {children}
     </button>

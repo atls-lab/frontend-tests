@@ -17,14 +17,15 @@ export const Box = forwardRef<HTMLDivElement, BoxProps>((
   return (
     <div
       ref={ref}
+      {...otherProps}
       className={clsx(
         className,
+        otherProps?.className,
         fill && fillStyles,
         fullViewportWidth && fullViewportWidthStyles,
         fullViewportHeight && fullViewportHeightStyles
       )}
       style={{ ...style, ...otherProps?.style }}
-      {...otherProps}
     >
       {children}
     </div>
