@@ -1,12 +1,8 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes }  from 'react'
 
-import { LayoutSprinkles }   from './layout.css'
+import { LayoutSprinkles } from './layout.css'
 
-export interface LayoutProps
-  extends PropsWithChildren,
-    HTMLAttributes<HTMLDivElement>,
-    LayoutSprinkles {
+export interface LayoutProps extends HTMLAttributes<HTMLDivElement>, LayoutSprinkles {
   fill?: boolean
   fullViewportWidth?: boolean
   fullViewportHeight?: boolean

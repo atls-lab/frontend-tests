@@ -1,7 +1,6 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-export interface MenuItemProps extends PropsWithChildren, HTMLAttributes<HTMLDivElement> {
+export interface MenuItemProps extends HTMLAttributes<HTMLDivElement> {
   hover?: boolean
   selected?: boolean
 }

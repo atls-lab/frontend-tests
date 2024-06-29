@@ -1,9 +1,5 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-import { TextSprinkles }     from './text.css'
+import { TextSprinkles }  from './text.css'
 
-export interface TextProps
-  extends PropsWithChildren,
-    TextSprinkles,
-    Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {}
+export interface TextProps extends TextSprinkles, Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {}

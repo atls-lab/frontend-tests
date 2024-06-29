@@ -1,12 +1,13 @@
 import React                 from 'react'
 import { PropsWithChildren } from 'react'
+import { ImgHTMLAttributes } from 'react'
 import { clsx }              from 'clsx'
 import { forwardRef }        from 'react'
 
 import { baseImageStyles }   from './image.styles.css'
 import { imageSprinkles }    from './image.styles.css'
 
-interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {}
+interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {}
 
 export const Image = forwardRef<HTMLImageElement, PropsWithChildren<ImageProps>>((
   { alt, className, width, height, ...props },

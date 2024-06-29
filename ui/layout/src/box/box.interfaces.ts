@@ -1,12 +1,8 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-import { BoxSprinkles }      from './box.css'
+import { BoxSprinkles }   from './box.css'
 
-export interface BoxProps
-  extends PropsWithChildren,
-    Omit<HTMLAttributes<HTMLDivElement>, 'color'>,
-    BoxSprinkles {
+export interface BoxProps extends Omit<HTMLAttributes<HTMLDivElement>, 'color'>, BoxSprinkles {
   fill?: boolean
   fullViewportWidth?: boolean
   fullViewportHeight?: boolean

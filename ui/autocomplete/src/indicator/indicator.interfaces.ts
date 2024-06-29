@@ -1,4 +1,3 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-export interface IndicatorProps extends PropsWithChildren, HTMLAttributes<HTMLButtonElement> {}
+export interface IndicatorProps extends HTMLAttributes<HTMLButtonElement> {}

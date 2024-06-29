@@ -1,4 +1,3 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-export interface MenuProps extends PropsWithChildren, HTMLAttributes<HTMLDivElement> {}
+export interface MenuProps extends HTMLAttributes<HTMLDivElement> {}

@@ -1,12 +1,8 @@
-import { HTMLAttributes }    from 'react'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-import { GridSprinkles }     from './grid.css'
+import { GridSprinkles }  from './grid.css'
 
-export interface GridProps
-  extends PropsWithChildren,
-    HTMLAttributes<HTMLDivElement>,
-    GridSprinkles {
+export interface GridProps extends HTMLAttributes<HTMLDivElement>, GridSprinkles {
   fill?: boolean
   fullViewportWidth?: boolean
   fullViewportHeight?: boolean
