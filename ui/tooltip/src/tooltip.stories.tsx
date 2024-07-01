@@ -1,18 +1,18 @@
-import React                from 'react'
-import { HTMLAttributes }   from 'react'
-import { FC }               from 'react'
-import { forwardRef }       from 'react'
-import { useState }         from 'react'
+import React                   from 'react'
+import { HTMLAttributes }      from 'react'
+import { FC }                  from 'react'
+import { forwardRef }          from 'react'
+import { useState }            from 'react'
 
-import { Column }           from '@ui/layout'
-import { Layout }           from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Tooltip }          from '@ui/tooltip'
-// import { testContainerStyles } from './tooltip.css'
-import { useTooltip }       from '@ui/tooltip'
+import { Column }              from '@ui/layout'
+import { Layout }              from '@ui/layout'
+import { Row }                 from '@ui/layout'
+import { Box }                 from '@ui/layout'
 
-import { testButtonStyles } from './tooltip.css'
+import { Tooltip }             from './tooltip.component'
+import { testContainerStyles } from './tooltip.css'
+import { testButtonStyles }    from './tooltip.css'
+import { useTooltip }          from './use-tooltip.hook'
 
 export default {
   title: 'Components/Tooltip',
@@ -156,7 +156,7 @@ WithArrow.story = {
 export const WithContainer = () => (
   <Row justifyContent='center' alignItems='center'>
     <Layout mt='50px'>
-      <Tooltip text='test' container={<Box />}>
+      <Tooltip text='test' container={<Box className={testContainerStyles} />}>
         <TestButton>WithContainer</TestButton>
       </Tooltip>
     </Layout>
