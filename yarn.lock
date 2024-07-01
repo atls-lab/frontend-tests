@@ -5819,6 +5819,7 @@ __metadata:
   resolution: "@ui/modal@workspace:ui/modal"
   dependencies:
     "@types/react": "npm:18.2.48"
+    "@ui/portal": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
@@ -5833,7 +5834,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/portal@workspace:ui/portal":
+"@ui/portal@workspace:0.0.1, @ui/portal@workspace:ui/portal":
   version: 0.0.0-use.local
   resolution: "@ui/portal@workspace:ui/portal"
   dependencies:

@@ -1,9 +1,18 @@
-import React               from 'react'
+import React                       from 'react'
 
-import { ContainerElement } from './container.element'
+import { PropsWithChildren } from 'react'
 
-const Container: React.FC = (props) => {
-  return <ContainerElement {...props} />
+import { baseContainerStyles }     from './container.styles.css'
+
+const Container: React.FC<PropsWithChildren<React.HTMLAttributes<HTMLDivElement>>> = ({
+  children,
+  ...props
+}) => {
+  return (
+    <div className={baseContainerStyles} {...props}>
+      {children}
+    </div>
+  )
 }
 
 export { Container }

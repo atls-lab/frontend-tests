@@ -128,7 +128,7 @@ const RAW_RUNTIME_STATE =
     ["@ui/layout", ["virtual:07ed37f6a69a056a6eea213df66bb169797fcd26488f6e19bf6fd8ca866595fd97cfb209f13a30797e0a7d854ad5b1cb4068882add7c89caf06924678f472e76#workspace:ui/layout", "virtual:863a688cd1b738116d72b63249250423a13d4fddc52b613a1ebc70a8700c41341bf83e6839315acd09f7a2858de493295b5d3b5cbc8ca3618504fb80cc88861e#workspace:ui/layout", "virtual:e7b7ec056399718147ebac4b219884eb4490e90a0afe4103282bf0f285e529de5d8034cd99d946eb1b8beabd1cc6b6aebecc44ed70053f5a36fa8886f8ee8c53#workspace:ui/layout", "workspace:ui/layout"]],\
     ["@ui/link", ["workspace:ui/link"]],\
     ["@ui/modal", ["workspace:ui/modal"]],\
-    ["@ui/portal", ["workspace:ui/portal"]],\
+    ["@ui/portal", ["virtual:022582748e26ff71edd1a892b9c1e97572220820919e45005e7819c1ae62563f2b767d6efb854723fb68ea687338ead52bdc9be8b471766fe8a99fb9a3ab5311#workspace:ui/portal", "workspace:ui/portal"]],\
     ["@ui/progress", ["workspace:ui/progress"]],\
     ["@ui/scrollbar", ["workspace:ui/scrollbar"]],\
     ["@ui/select", ["workspace:ui/select"]],\
@@ -9295,6 +9295,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/modal", "workspace:ui/modal"],\
           ["@types/react", "npm:18.2.48"],\
+          ["@ui/portal", "virtual:022582748e26ff71edd1a892b9c1e97572220820919e45005e7819c1ae62563f2b767d6efb854723fb68ea687338ead52bdc9be8b471766fe8a99fb9a3ab5311#workspace:ui/portal"],\
           ["@ui/theme", "virtual:e7e05b0d4f5ab0d1b1afaec4339004c9089720852ec34341d261da526c23b3fcf432f932b0b07e08372f4b5437ba725ac5fc3b694be461825b7009a34f461829#workspace:ui/theme"],\
           ["@ui/utils", "virtual:71f9ef3e6d1fc549bb3892cd8f0e22ad4e4c8fdad0c64e2d4756fa43cd348a0654fa49537ad8b7d0231e8f18a8c9c31c1faf8a88be999ab3ea6d80cf1a6889a4#workspace:ui/utils"],\
           ["@vanilla-extract/css", "npm:1.14.2"],\
@@ -9306,6 +9307,30 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ui/portal", [\
+      ["virtual:022582748e26ff71edd1a892b9c1e97572220820919e45005e7819c1ae62563f2b767d6efb854723fb68ea687338ead52bdc9be8b471766fe8a99fb9a3ab5311#workspace:ui/portal", {\
+        "packageLocation": "./.yarn/__virtual__/@ui-portal-virtual-f78f7b01c2/1/ui/portal/",\
+        "packageDependencies": [\
+          ["@ui/portal", "virtual:022582748e26ff71edd1a892b9c1e97572220820919e45005e7819c1ae62563f2b767d6efb854723fb68ea687338ead52bdc9be8b471766fe8a99fb9a3ab5311#workspace:ui/portal"],\
+          ["@types/react", "npm:18.2.48"],\
+          ["@types/react-dom", "npm:18.2.18"],\
+          ["@types/vanilla-extract__css", null],\
+          ["@types/vanilla-extract__dynamic", null],\
+          ["@vanilla-extract/css", "npm:1.14.2"],\
+          ["@vanilla-extract/dynamic", null],\
+          ["react", null],\
+          ["react-dom", null]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "@types/vanilla-extract__css",\
+          "@types/vanilla-extract__dynamic",\
+          "@vanilla-extract/css",\
+          "@vanilla-extract/dynamic",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:ui/portal", {\
         "packageLocation": "./ui/portal/",\
         "packageDependencies": [\
