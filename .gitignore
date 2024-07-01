@@ -54,3 +54,5 @@ dist/
 #Vs code
 .vscode
 /.yarn/sdks
+
+*storybook.log
