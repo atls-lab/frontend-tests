@@ -13,7 +13,7 @@ function getAbsolutePath(value) {
 
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
-  stories: ['../**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ['../../**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     getAbsolutePath('@storybook/addon-webpack5-compiler-swc'),
     getAbsolutePath('@storybook/addon-onboarding'),
@@ -60,6 +60,17 @@ const config = {
   framework: {
     name: getAbsolutePath('@storybook/react-webpack5'),
     options: {},
+  },
+  features: {
+    buildStoriesJson: true,
+  },
+  webpackFinal: async (config) => {
+    // eslint-disable-next-line no-param-reassign
+    config.resolve.fallback.assert = false
+    // eslint-disable-next-line no-param-reassign
+    config.resolve.fallback.url = false
+
+    return config
   },
 }
 export default config

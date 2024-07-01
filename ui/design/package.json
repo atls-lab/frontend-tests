@@ -4,16 +4,16 @@
   "private": true,
   "license": "BSD-3-Clause",
   "scripts": {
-    "build": "storybook build",
-    "dev": "storybook dev -p 3001",
+    "build": "storybook build --config-dir ./src -o dist --quiet",
+    "dev": "storybook dev --config-dir ./src -p 3001",
     "prepack": "run build",
     "start": "node server.js"
   },
   "dependencies": {
-    "@ui/layout": "workspace:0.0.1",
-    "@ui/tooltip": "workspace:0.0.1",
     "@vanilla-extract/css": "1.15.3",
     "@vanilla-extract/dynamic": "2.1.1",
+    "cors": "2.8.5",
+    "express": "4.19.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
