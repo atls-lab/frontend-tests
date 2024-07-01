@@ -5720,6 +5720,7 @@ __metadata:
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/modal": "workspace:0.0.1"
     "@ui/tooltip": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.15.3"
     "@vanilla-extract/dynamic": "npm:2.1.1"
@@ -5814,7 +5815,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/modal@workspace:ui/modal":
+"@ui/modal@workspace:0.0.1, @ui/modal@workspace:ui/modal":
   version: 0.0.0-use.local
   resolution: "@ui/modal@workspace:ui/modal"
   dependencies:
