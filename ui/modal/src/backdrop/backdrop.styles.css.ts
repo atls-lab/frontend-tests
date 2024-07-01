@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css'
 
 export const baseBackdropStyles = style({
   position: 'fixed',
@@ -9,4 +9,4 @@ export const baseBackdropStyles = style({
   right: 0,
   backgroundColor: 'rgba(0, 0, 0, 0.5)',
   WebkitTapHighlightColor: 'transparent',
-});
+})

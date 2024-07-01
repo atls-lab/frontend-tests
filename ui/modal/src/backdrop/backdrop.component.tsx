@@ -1,18 +1,20 @@
-import React from 'react';
-import {BackdropElement, baseBackdropStyles} from "./backdrop.element";
-import {backdropMotionVariants} from "./backdrop.motion";
+import React                                  from 'react'
+
+import { BackdropElement }                     from './backdrop.element'
+import { baseBackdropStyles } from './backdrop.element'
+import { backdropMotionVariants }              from './backdrop.motion'
 
 const Backdrop: React.FC = (props) => {
   return (
-      <BackdropElement
-          className={baseBackdropStyles}
-          variants={backdropMotionVariants}
-          animate="target"
-          initial="enter"
-          exit="exit"
-          {...props}
-      />
-  );
-};
+    <BackdropElement
+      className={baseBackdropStyles}
+      variants={backdropMotionVariants}
+      animate='target'
+      initial='enter'
+      exit='exit'
+      {...props}
+    />
+  )
+}
 
-export { Backdrop };
+export { Backdrop }

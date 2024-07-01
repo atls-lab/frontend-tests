@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import { baseBackdropStyles } from './backdrop.styles.css';
+import { motion }             from 'framer-motion'
 
-const BackdropElement = motion.div;
+import { baseBackdropStyles } from './backdrop.styles.css'
 
-export { BackdropElement, baseBackdropStyles };
+const BackdropElement = motion.div
+
+export { BackdropElement, baseBackdropStyles }

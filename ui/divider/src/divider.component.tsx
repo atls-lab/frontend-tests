@@ -1,7 +1,7 @@
 import React            from 'react'
 import { FC }           from 'react'
 
-import { Box }           from '@ui/layout'
+import { Box }          from '@ui/layout'
 
 import { DividerProps } from './divider.interface'
 
