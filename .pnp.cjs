@@ -70,6 +70,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:ui/link"\
     },\
     {\
+      "name": "@ui/portal",\
+      "reference": "workspace:ui/portal"\
+    },\
+    {\
       "name": "@ui/progress",\
       "reference": "workspace:ui/progress"\
     },\
@@ -119,6 +123,7 @@ const RAW_RUNTIME_STATE =
     ["@ui/input", ["virtual:e7e05b0d4f5ab0d1b1afaec4339004c9089720852ec34341d261da526c23b3fcf432f932b0b07e08372f4b5437ba725ac5fc3b694be461825b7009a34f461829#workspace:ui/input", "workspace:ui/input"]],\
     ["@ui/layout", ["virtual:07ed37f6a69a056a6eea213df66bb169797fcd26488f6e19bf6fd8ca866595fd97cfb209f13a30797e0a7d854ad5b1cb4068882add7c89caf06924678f472e76#workspace:ui/layout", "virtual:863a688cd1b738116d72b63249250423a13d4fddc52b613a1ebc70a8700c41341bf83e6839315acd09f7a2858de493295b5d3b5cbc8ca3618504fb80cc88861e#workspace:ui/layout", "virtual:e7b7ec056399718147ebac4b219884eb4490e90a0afe4103282bf0f285e529de5d8034cd99d946eb1b8beabd1cc6b6aebecc44ed70053f5a36fa8886f8ee8c53#workspace:ui/layout", "workspace:ui/layout"]],\
     ["@ui/link", ["workspace:ui/link"]],\
+    ["@ui/portal", ["workspace:ui/portal"]],\
     ["@ui/progress", ["workspace:ui/progress"]],\
     ["@ui/scrollbar", ["workspace:ui/scrollbar"]],\
     ["@ui/select", ["workspace:ui/select"]],\
@@ -9275,6 +9280,17 @@ const RAW_RUNTIME_STATE =
           ["clsx", "npm:2.1.1"],\
           ["next", "virtual:77bf311a6543a80f771d580a75afd24454320054d1db30ce3ab911d3ca55fb188f2309ad8aa7dcfbcd75ff583d1144d26b9b446895bb8207e17bbd250129d96a#npm:14.1.0"],\
           ["rainbow-sprinkles", "virtual:ff71f372cc3486cd89139b4eb0299a0e09ec87afe363215d1cf0bec88448af55e5437e150b268a8c04ac7dec287bc7bcdc966d8a5f5241163b71aafe4e73c8d8#npm:0.17.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@ui/portal", [\
+      ["workspace:ui/portal", {\
+        "packageLocation": "./ui/portal/",\
+        "packageDependencies": [\
+          ["@ui/portal", "workspace:ui/portal"],\
+          ["@types/react", "npm:18.2.48"],\
+          ["@types/react-dom", "npm:18.2.18"]\
         ],\
         "linkType": "SOFT"\
       }]\
