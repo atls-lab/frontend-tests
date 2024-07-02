@@ -9574,6 +9574,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./ui/switch/",\
         "packageDependencies": [\
           ["@ui/switch", "workspace:ui/switch"],\
+          ["@storybook/react", "virtual:71f9ef3e6d1fc549bb3892cd8f0e22ad4e4c8fdad0c64e2d4756fa43cd348a0654fa49537ad8b7d0231e8f18a8c9c31c1faf8a88be999ab3ea6d80cf1a6889a4#npm:8.1.11"],\
           ["@types/react", "npm:18.2.48"],\
           ["@ui/theme", "virtual:e7e05b0d4f5ab0d1b1afaec4339004c9089720852ec34341d261da526c23b3fcf432f932b0b07e08372f4b5437ba725ac5fc3b694be461825b7009a34f461829#workspace:ui/theme"],\
           ["@ui/utils", "virtual:71f9ef3e6d1fc549bb3892cd8f0e22ad4e4c8fdad0c64e2d4756fa43cd348a0654fa49537ad8b7d0231e8f18a8c9c31c1faf8a88be999ab3ea6d80cf1a6889a4#workspace:ui/utils"],\

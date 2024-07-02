@@ -5724,7 +5724,7 @@ __metadata:
     "@ui/modal": "workspace:0.0.1"
     "@ui/tooltip": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.15.3"
-    "@vanilla-extract/dynamic": "npm:2.1.1"
+    "@vanilla-extract/dynamic": "npm:*"
     "@vanilla-extract/webpack-plugin": "npm:2.3.11"
     cors: "npm:2.8.5"
     css-loader: "npm:7.1.2"
@@ -5914,6 +5914,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/switch@workspace:ui/switch"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
@@ -6068,7 +6069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/dynamic@npm:2.1.1":
+"@vanilla-extract/dynamic@npm:*, @vanilla-extract/dynamic@npm:2.1.1":
   version: 2.1.1
   resolution: "@vanilla-extract/dynamic@npm:2.1.1"
   dependencies:
