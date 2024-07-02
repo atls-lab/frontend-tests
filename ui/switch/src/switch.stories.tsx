@@ -1,19 +1,16 @@
-import { Meta }                                                  from '@storybook/react'
+import { Meta }                from '@storybook/react'
 
-import React                                                     from 'react'
+import React                   from 'react'
+import { useRef }              from 'react'
 
-import { useRef }                                          from 'react'
+import { useSwitch }           from '@ui/utils'
 
-import { useSwitch }                                              from '@ui/utils'
-
-import { baseHandleStyles }                                       from './switch.style.css'
-
-import { baseThumbStyles }                      from './switch.style.css'
-
+import { baseHandleStyles }    from './switch.style.css'
+import { baseThumbStyles }     from './switch.style.css'
 import { disabledThumbStyles } from './switch.style.css'
 
 export default {
-  title: 'Компоненты/Переключатель/Примеры',
+  title: 'Components/Switch',
 } as Meta
 
 const HandleElement = React.forwardRef<HTMLButtonElement, React.HTMLAttributes<HTMLButtonElement>>((
