@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react'
 import { PropsWithChildren } from 'react'
 import { ReactElement }      from 'react'
 
-import { Portal }             from '@ui/portal'
+import { Portal }            from '@ui/portal'
 
 import { Backdrop }          from './backdrop'
 import { Container }         from './container'
