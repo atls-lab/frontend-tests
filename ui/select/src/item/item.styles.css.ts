@@ -8,3 +8,7 @@ export const baseItemStyles = style({
   hyphens: 'auto',
   alignItems: 'center',
 })
+
+export const highlightedMenuItemStyles = style({
+  backgroundColor: 'aqua',
+})
