@@ -8,7 +8,7 @@ export const baseContainerStyles = style({
   justifyContent: 'center',
   minWidth: 30,
   minHeight: 32,
-  padding: [vars.space.g6, vars.space.g8],
+  padding: `${vars.space.g6} ${vars.space.g8}`,
   margin: vars.space.zero,
   color: vars.colors.white,
   wordWrap: 'break-word',
