@@ -6,14 +6,25 @@ import { Input }    from './input.component'
 const meta: Meta<typeof Input> = {
   title: 'Components/Input',
   component: Input,
+  tags: ['autodocs'],
   argTypes: {
     variant: {
-      control: { type: 'radio' },
+      description: 'Вариант инпута',
+      control: { type: 'inline-radio' },
       options: ['blue'],
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'blue' },
+      },
     },
     size: {
-      control: { type: 'select' },
+      description: 'Размер инпута',
+      control: { type: 'inline-radio' },
       options: ['normal', 'big'],
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'normal' },
+      },
     },
   },
 }

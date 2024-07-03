@@ -1,6 +1,8 @@
+import { Meta }                from '@storybook/react'
+import { StoryObj }            from '@storybook/react'
+
 import React                   from 'react'
 import { HTMLAttributes }      from 'react'
-import { FC }                  from 'react'
 import { forwardRef }          from 'react'
 import { useState }            from 'react'
 
@@ -14,9 +16,12 @@ import { testContainerStyles } from './tooltip.css'
 import { testButtonStyles }    from './tooltip.css'
 import { useTooltip }          from './use-tooltip.hook'
 
-export default {
+const meta: Meta = {
   title: 'Components/Tooltip',
+  tags: ['autodocs'],
 }
+
+export default meta
 
 const TestButton = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>((
   { children, ...props },
@@ -27,182 +32,175 @@ const TestButton = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>((
   </div>
 ))
 
-export const Base = () => (
-  <Column justifyContent='center' alignItems='center'>
-    <Layout minHeight='400px' width='1000px' pt='50px' pl='150px'>
+export const Base: StoryObj = {
+  name: 'Базовый',
+  render: () => (
+    <Column fill alignItems='center'>
+      <Layout flexBasis='30px' />
       <Tooltip text='test' trigger='click' animate>
         <TestButton>Base</TestButton>
       </Tooltip>
-    </Layout>
-  </Column>
-)
-
-Base.story = {
-  name: 'Базовый',
+      <Layout flexBasis='30px' />
+    </Column>
+  ),
 }
 
-export const Hook = () => {
-  const { triggerProps, render } = useTooltip({ animate: true })
-
-  return (
-    <Row>
-      <Layout mt='50px'>
-        {render({ text: 'Hook' })}
-        <TestButton {...triggerProps}>Hook</TestButton>
-      </Layout>
-    </Row>
-  )
-}
-
-Hook.story = {
+export const Hook: StoryObj = {
   name: 'Хук',
+  render: () => {
+    const { triggerProps, render, isOpen } = useTooltip({ animate: true })
+
+    return (
+      <Column fill alignItems='center'>
+        <Layout flexBasis='30px' />
+        {isOpen && render({ text: 'Hook' })}
+        <TestButton {...triggerProps}>Hook</TestButton>
+        <Layout flexBasis='30px' />
+      </Column>
+    )
+  },
 }
 
-export const Anchor = () => (
-  <Column m='50px' justifyContent='center' alignItems='center'>
-    <Row mb='50px'>
-      <Layout mr='24px'>
+export const Anchor: StoryObj = {
+  name: 'Привязка',
+  render: () => (
+    <Column alignItems='center'>
+      <Layout flexBasis='50px' />
+      <Row width='400px'>
         <Tooltip text='test' anchor='top-start'>
           <TestButton>top-start</TestButton>
         </Tooltip>
-      </Layout>
-      <Layout mr='24px'>
+        <Layout flexBasis='24px' />
         <Tooltip text='test' anchor='top-center'>
           <TestButton>top-center</TestButton>
         </Tooltip>
-      </Layout>
-      <Layout>
+        <Layout flexBasis='24px' />
         <Tooltip text='test' anchor='top-end'>
           <TestButton>top-right</TestButton>
         </Tooltip>
-      </Layout>
-    </Row>
-    <Row mb='50px'>
-      <Layout mr='24px'>
+      </Row>
+      <Layout flexBasis='50px' />
+      <Row width='400px'>
         <Tooltip text='test' anchor='bottom-start'>
           <TestButton>bottom-start</TestButton>
         </Tooltip>
-      </Layout>
-      <Layout mr='24px'>
+        <Layout flexBasis='24px' />
         <Tooltip text='test' anchor='bottom-center'>
           <TestButton>bottom-center</TestButton>
         </Tooltip>
-      </Layout>
-      <Layout>
+        <Layout flexBasis='24px' />
         <Tooltip text='test' anchor='bottom-end'>
           <TestButton>bottom-end</TestButton>
         </Tooltip>
-      </Layout>
-    </Row>
-    <Row mb='50px'>
-      <Layout mr='24px'>
+      </Row>
+      <Layout flexBasis='50px' />
+      <Row width='400px'>
         <Tooltip text='test' anchor='left-center'>
           <TestButton>left-center</TestButton>
         </Tooltip>
-      </Layout>
-    </Row>
-    <Row>
-      <Layout mr='24px'>
+      </Row>
+      <Layout flexBasis='50px' />
+      <Row width='400px'>
         <Tooltip text='test' anchor='right-center'>
           <TestButton>right-center</TestButton>
         </Tooltip>
-      </Layout>
-    </Row>
-  </Column>
-)
-
-Anchor.story = {
-  name: 'Привязка',
+      </Row>
+      <Layout flexBasis='50px' />
+    </Column>
+  ),
 }
 
-export const Trigger = () => (
-  <Row justifyContent='center' alignItems='center'>
-    <Layout mt='50px' mr='24px'>
-      <Tooltip text='test' trigger='click'>
-        <TestButton>Click</TestButton>
-      </Tooltip>
-    </Layout>
-    <Layout mt='50px' mr='24px'>
-      <Tooltip text='test' trigger='hover'>
-        <TestButton>Hover</TestButton>
-      </Tooltip>
-    </Layout>
-    <Layout mt='50px'>
-      <Tooltip text='test' trigger='menu'>
-        <TestButton>Context menu</TestButton>
-      </Tooltip>
-    </Layout>
-  </Row>
-)
-
-Trigger.story = {
+export const Trigger: StoryObj = {
   name: 'Триггер',
-}
-
-export const WithArrow = () => (
-  <Row justifyContent='center' alignItems='center'>
-    <Layout mt='50px'>
-      <Tooltip text='test' showArrow>
-        <TestButton>Arrow</TestButton>
-      </Tooltip>
-    </Layout>
-  </Row>
-)
-
-WithArrow.story = {
-  name: 'Стрелка',
-}
-
-export const WithContainer = () => (
-  <Row justifyContent='center' alignItems='center'>
-    <Layout mt='50px'>
-      <Tooltip text='test' container={<Box className={testContainerStyles} />}>
-        <TestButton>WithContainer</TestButton>
-      </Tooltip>
-    </Layout>
-  </Row>
-)
-
-WithContainer.story = {
-  name: 'Собственный контейнер',
-}
-
-export const Animate = () => (
-  <Row justifyContent='center' alignItems='center'>
-    <Layout mt='50px' mr='24px'>
-      <Tooltip text='test' animate>
-        <TestButton>With animate</TestButton>
-      </Tooltip>
-    </Layout>
-    <Layout mt='50px'>
-      <Tooltip text='test'>
-        <TestButton>Without animate</TestButton>
-      </Tooltip>
-    </Layout>
-  </Row>
-)
-
-Animate.story = {
-  name: 'Анимация',
-}
-
-export const Controlled = () => {
-  const [open, setOpen] = useState(false)
-
-  return (
-    <Row justifyContent='center' alignItems='center'>
-      <Layout mt='50px' mr='24px'>
-        <Tooltip text='test' trigger='hover' isOpen={open} closeOnOutsideClick={false} animate>
-          <TestButton>Controlled</TestButton>
+  render: () => (
+    <Column alignItems='center'>
+      <Layout flexBasis='50px' />
+      <Row justifyContent='center' alignItems='center'>
+        <Tooltip text='test' trigger='click'>
+          <TestButton>Click</TestButton>
         </Tooltip>
-      </Layout>
-      <Layout mt='50px'>
-        <TestButton onClick={() => setOpen(!open)}>Click</TestButton>
-      </Layout>
-    </Row>
-  )
+        <Layout flexBasis='24px' />
+        <Tooltip text='test' trigger='hover'>
+          <TestButton>Hover</TestButton>
+        </Tooltip>
+        <Layout flexBasis='24px' />
+        <Tooltip text='test' trigger='menu'>
+          <TestButton>Context menu</TestButton>
+        </Tooltip>
+      </Row>
+      <Layout flexBasis='50px' />
+    </Column>
+  ),
 }
 
-Controlled.story = {
+export const Arrow: StoryObj = {
+  name: 'Стрелка',
+  render: () => (
+    <Column justifyContent='center' alignItems='center'>
+      <Layout flexBasis='50px' />
+      <Row justifyContent='center' alignItems='center'>
+        <Tooltip text='test' showArrow>
+          <TestButton>Arrow</TestButton>
+        </Tooltip>
+        <Layout flexBasis='24px' />
+        <Tooltip text='test' showArrow={false}>
+          <TestButton>Without arrow</TestButton>
+        </Tooltip>
+      </Row>
+      <Layout flexBasis='50px' />
+    </Column>
+  ),
+}
+
+export const CustomContainer: StoryObj = {
+  name: 'Собственный контейнер',
+  render: () => (
+    <Column justifyContent='center' alignItems='center'>
+      <Layout flexBasis='50px' />
+      <Tooltip text='test' container={<Box className={testContainerStyles} />}>
+        <TestButton>With container</TestButton>
+      </Tooltip>
+      <Layout flexBasis='50px' />
+    </Column>
+  ),
+}
+
+export const Animate: StoryObj = {
+  name: 'Анимация',
+  render: () => (
+    <Column justifyContent='center' alignItems='center'>
+      <Layout flexBasis='50px' />
+      <Row justifyContent='center' alignItems='center'>
+        <Tooltip text='test' animate>
+          <TestButton>With animate</TestButton>
+        </Tooltip>
+        <Layout flexBasis='24px' />
+        <Tooltip text='test'>
+          <TestButton>Without animate</TestButton>
+        </Tooltip>
+      </Row>
+      <Layout flexBasis='50px' />
+    </Column>
+  ),
+}
+
+export const Controlled: StoryObj = {
   name: 'Управляемое открытие',
+  render: () => {
+    const [open, setOpen] = useState(false)
+
+    return (
+      <Column justifyContent='center' alignItems='center'>
+        <Layout flexBasis='50px' />
+        <Row justifyContent='center' alignItems='center'>
+          <Tooltip text='test' trigger='hover' isOpen={open} closeOnOutsideClick={false} animate>
+            <TestButton>Controlled</TestButton>
+          </Tooltip>
+          <Layout flexBasis='24px' />
+          <TestButton onClick={() => setOpen(!open)}>Click</TestButton>
+        </Row>
+        <Layout flexBasis='50px' />
+      </Column>
+    )
+  },
 }

@@ -34,7 +34,7 @@ export const handleGradient = (strokeColor) => {
 
 export const Line: FunctionComponent<LineProps> = ({
   percent,
-  strokeColor = '#1890ff',
+  strokeColor = '$blueProtective',
   strokeLinecap,
   trailLinecap,
   trailColor,
@@ -60,7 +60,11 @@ export const Line: FunctionComponent<LineProps> = ({
   }
 
   return (
-    <LineContainer trailLinecap={trailLinecap} height={strokeWeight} backgroundColor={trailColor}>
+    <LineContainer
+      trailLinecap={trailLinecap}
+      height={`${strokeWeight}px`}
+      backgroundColor={trailColor}
+    >
       {percentList
         .map((item, index) => {
           let backgroundProps = {}
@@ -77,6 +81,7 @@ export const Line: FunctionComponent<LineProps> = ({
               background: strokeColorList[index] || strokeColorList[strokeColorList.length - 1],
             }
           }
+
           return (
             <LinePercent
               key={getKey(index)}

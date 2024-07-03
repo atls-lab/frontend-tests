@@ -6,12 +6,25 @@ import { Button }   from './button.component'
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
+  tags: ['autodocs'],
   argTypes: {
+    children: {
+      description: 'Контент',
+      table: {
+        type: { summary: 'ReactNode' },
+      },
+    },
     variant: {
-      control: { type: 'radio' },
+      description: 'Вариант кнопки',
+      control: { type: 'inline-radio' },
       options: ['blue', 'lightBlue'],
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'blue' },
+      },
     },
     size: {
+      description: 'Размер кнопки',
       control: { type: 'select' },
       options: [
         'normal',
@@ -24,6 +37,10 @@ const meta: Meta<typeof Button> = {
         'semiMedium',
         'autoSizeRound',
       ],
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'huge' },
+      },
     },
   },
 }
@@ -34,8 +51,8 @@ type Story = StoryObj<typeof Button>
 
 export const Variants: Story = {
   args: {
-    variant: 'blue',
     children: 'Text',
-    size: 'large',
+    variant: 'blue',
+    size: 'huge',
   },
 }

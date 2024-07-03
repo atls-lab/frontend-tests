@@ -18,14 +18,16 @@ interface AvatarProps extends AvatarVariants {
 const meta: Meta<AvatarProps> = {
   title: 'Components/Avatar',
   render: ({ size, shape, image, fallback }) => (
-    <AvatarRoot shape={shape} size={size}>
-      <AvatarImage src={image} />
-      <AvatarFallback size={size}>
-        <TextTransform firstLetter upperCase>
-          {fallback}
-        </TextTransform>
-      </AvatarFallback>
-    </AvatarRoot>
+    <div style={{ display: 'flex', justifyContent: 'center', padding: 40 }}>
+      <AvatarRoot shape={shape} size={size}>
+        <AvatarImage src={image} />
+        <AvatarFallback size={size}>
+          <TextTransform firstLetter upperCase>
+            {fallback}
+          </TextTransform>
+        </AvatarFallback>
+      </AvatarRoot>
+    </div>
   ),
   tags: ['autodocs'],
   argTypes: {
@@ -53,6 +55,7 @@ const meta: Meta<AvatarProps> = {
       table: {
         category: 'Форма',
         type: { summary: 'string' },
+        defaultValue: { summary: 'normal' },
       },
     },
     shape: {
