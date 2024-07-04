@@ -296,6 +296,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls/react-app-links@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@atls/react-app-links@npm:0.0.2"
+  dependencies:
+    tldjs: "npm:^2.3.1"
+  peerDependencies:
+    react: ^17.0.1
+  checksum: f2d6b600d9cc457f56eddd33ef78e2aa5d7933dbd555b3aecb6a097d7a84b667b9e0c2a5f34ffc3079963aba24687d03453ddda268e6094a7f8f448179924ade
+  languageName: node
+  linkType: hard
+
+"@atls/react-upload@npm:0.0.3":
+  version: 0.0.3
+  resolution: "@atls/react-upload@npm:0.0.3"
+  dependencies:
+    "@atls/react-app-links": "npm:0.0.2"
+    graphql-request: "npm:^4.0.0"
+  peerDependencies:
+    graphql: ^16.3.0
+    react: ^17.0.1
+  checksum: ff095610797cb715d0130a411e07f9bdce35b7ce1a0f3154c00847bc8a0cfb338b0ccdc4c3018308bd6280d6d3b3b9c13bbe990df72f0441d8680adea124e022
+  languageName: node
+  linkType: hard
+
 "@atls/webpack-proto-imports-loader@npm:0.0.12":
   version: 0.0.12
   resolution: "@atls/webpack-proto-imports-loader@npm:0.0.12"
@@ -5747,10 +5771,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/autocomplete@workspace:ui/autocomplete"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/input": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
     clsx: "npm:2.1.1"
     downshift: "npm:7.6.2"
     framer-motion: "npm:11.2.11"
@@ -5813,6 +5840,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/conditional-render@workspace:0.0.1, @ui/conditional-render@workspace:ui/conditional-render":
+  version: 0.0.0-use.local
+  resolution: "@ui/conditional-render@workspace:ui/conditional-render"
+  dependencies:
+    "@types/react": "npm:18.2.48"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/design@workspace:ui/design":
   version: 0.0.0-use.local
   resolution: "@ui/design@workspace:ui/design"
@@ -5845,6 +5883,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/events-state@workspace:0.0.1, @ui/events-state@workspace:ui/events-state":
+  version: 0.0.0-use.local
+  resolution: "@ui/events-state@workspace:ui/events-state"
+  dependencies:
+    "@types/react": "npm:18.2.48"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/image@workspace:ui/image":
   version: 0.0.0-use.local
   resolution: "@ui/image@workspace:ui/image"
@@ -5867,10 +5916,16 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
+    "@ui/conditional-render": "workspace:0.0.1"
+    "@ui/events-state": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
+    "@ui/upload": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
     "@vanilla-extract/recipes": "npm:0.5.2"
+    clsx: "npm:2.1.1"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -5915,10 +5970,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/popover@workspace:ui/popover":
+  version: 0.0.0-use.local
+  resolution: "@ui/popover@workspace:ui/popover"
+  dependencies:
+    "@storybook/react": "npm:8.1.11"
+    "@types/react": "npm:18.2.48"
+    "@ui/condition": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/theme": "workspace:0.0.1"
+    "@ui/tooltip": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
+    framer-motion: "npm:11.2.11"
+    react-laag: "npm:2.0.5"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/progress@workspace:0.0.1, @ui/progress@workspace:ui/progress":
   version: 0.0.0-use.local
   resolution: "@ui/progress@workspace:ui/progress"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/button": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -5955,6 +6033,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/select@workspace:ui/select"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/button": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
@@ -6041,6 +6120,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/tooltip@workspace:ui/tooltip"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/condition": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -6052,6 +6132,21 @@ __metadata:
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/upload@workspace:0.0.1, @ui/upload@workspace:ui/upload":
+  version: 0.0.0-use.local
+  resolution: "@ui/upload@workspace:ui/upload"
+  dependencies:
+    "@atls/react-upload": "npm:0.0.3"
+    "@types/react": "npm:18.2.48"
+    "@types/react-dom": "npm:18.2.18"
+    graphql: "npm:16.9.0"
+    react-dropzone: "npm:14.2.3"
+  peerDependencies:
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -7856,6 +7951,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"attr-accept@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "attr-accept@npm:2.2.2"
+  checksum: c867ed41ed749988ad2a6fc70eb2498b9c3c2d58aaad2a8d05422a383058f9d29e50c4bca363c5ee7433df738a7920cc95377bbce8678e817fb498299dd82010
+  languageName: node
+  linkType: hard
+
 "auto-bind@npm:4.0.0":
   version: 4.0.0
   resolution: "auto-bind@npm:4.0.0"
@@ -8966,6 +9068,15 @@ __metadata:
     path-type: "npm:^4.0.0"
     yaml: "npm:^1.10.0"
   checksum: 03600bb3870c80ed151b7b706b99a1f6d78df8f4bdad9c95485072ea13358ef294b13dd99f9e7bf4cc0b43bcd3599d40df7e648750d21c2f6817ca2cd687e071
+  languageName: node
+  linkType: hard
+
+"cross-fetch@npm:^3.1.5":
+  version: 3.1.8
+  resolution: "cross-fetch@npm:3.1.8"
+  dependencies:
+    node-fetch: "npm:^2.6.12"
+  checksum: ac8c4ca87d2ac0e17a19b6a293a67ee8934881aee5ec9a5a8323c30e9a9a60a0f5291d3c0d633ec2a2f970cbc60978d628804dfaf03add92d7e720b6d37f392c
   languageName: node
   linkType: hard
 
@@ -10775,6 +10886,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"extract-files@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "extract-files@npm:9.0.0"
+  checksum: 0ad2f94ef5d7b7da1e5c20428ca08d02d70654af8d3a2c9fd4c1af4c2498b4ab11b9d93f11755348d89d477ce18aa408f22b8875de22fa82d8f166a59a52b06c
+  languageName: node
+  linkType: hard
+
 "fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
@@ -10886,6 +11004,15 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: 3a854be3a7501bdb0fd8a1c0d45c156c0dc8f0afced07cbdac0b13a79c2f2a03f7770d68cb555ff30b5ea7c20719df34e1b2bd896c93e3138ee31f0bdc560310
+  languageName: node
+  linkType: hard
+
+"file-selector@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "file-selector@npm:0.6.0"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 6add4098ae07fd1e9050b1e8d3fd9f128680c1d6648c0676af54ace4586e6e5bfcb8fdfa45b69e9131ffd8175bf630d54a445a5facf9be244f85b99ce309183e
   languageName: node
   linkType: hard
 
@@ -11062,6 +11189,17 @@ __metadata:
     typescript: ">3.6.0"
     webpack: ^5.11.0
   checksum: 49be81a780271b0e1f8c230c32ddb54d7e7ca562565b29811a94d5e679607b947850b133c3bb63057a71e67ac717c6c86c6d0390d1ecc885b506ae9158cf9bb5
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "form-data@npm:3.0.1"
+  dependencies:
+    asynckit: "npm:^0.4.0"
+    combined-stream: "npm:^1.0.8"
+    mime-types: "npm:^2.1.12"
+  checksum: 944b40ff63b9cb1ca7a97e70f72104c548e0b0263e3e817e49919015a0d687453086259b93005389896dbffd3777cccea2e67c51f4e827590e5979b14ff91bf7
   languageName: node
   linkType: hard
 
@@ -11596,6 +11734,26 @@ __metadata:
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
   checksum: 6dd60dba97007b21e3a829fab3f771803cc1292977fe610e240ea72afd67e5690ac9eeaafc4a99710e78962e5936ab5a460787c2a1180f1cb0ccfac37d29f897
+  languageName: node
+  linkType: hard
+
+"graphql-request@npm:^4.0.0":
+  version: 4.3.0
+  resolution: "graphql-request@npm:4.3.0"
+  dependencies:
+    cross-fetch: "npm:^3.1.5"
+    extract-files: "npm:^9.0.0"
+    form-data: "npm:^3.0.0"
+  peerDependencies:
+    graphql: 14 - 16
+  checksum: 4e02366a9349b646b3503be19b02039a8886098cdb529c83e65bfad2ac91ca8194701ff8d0027014cc18a38c290d2f142c50cb75c9671a4fe98753df31d197ae
+  languageName: node
+  linkType: hard
+
+"graphql@npm:16.9.0":
+  version: 16.9.0
+  resolution: "graphql@npm:16.9.0"
+  checksum: 5833f82bb6c31bec120bbf9cd400eda873e1bb7ef5c17974fa262cd82dc68728fda5d4cb859dc8aaa4c4fe4f6fe1103a9c47efc01a12c02ae5cb581d8e4029e2
   languageName: node
   linkType: hard
 
@@ -14097,7 +14255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.0.0":
+"node-fetch@npm:^2.0.0, node-fetch@npm:^2.6.12":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -15369,6 +15527,19 @@ __metadata:
   peerDependencies:
     react: ^18.3.1
   checksum: 3f4b73a3aa083091173b29812b10394dd06f4ac06aff410b74702cfb3aa29d7b0ced208aab92d5272919b612e5cda21aeb1d54191848cf6e46e9e354f3541f81
+  languageName: node
+  linkType: hard
+
+"react-dropzone@npm:14.2.3":
+  version: 14.2.3
+  resolution: "react-dropzone@npm:14.2.3"
+  dependencies:
+    attr-accept: "npm:^2.2.2"
+    file-selector: "npm:^0.6.0"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ">= 16.8 || 18.0.0"
+  checksum: 34cf1758a896795b579adab5f9cdc144330577ab1826a0b66ff9daa8c60a80ed6b31b8f989647664f2548cfe00b336e9c31a2f3dd8de43111c8318fcc89b279c
   languageName: node
   linkType: hard
 
@@ -17235,6 +17406,15 @@ __metadata:
   version: 2.2.1
   resolution: "tinyspy@npm:2.2.1"
   checksum: 170d6232e87f9044f537b50b406a38fbfd6f79a261cd12b92879947bd340939a833a678632ce4f5c4a6feab4477e9c21cd43faac3b90b68b77dd0536c4149736
+  languageName: node
+  linkType: hard
+
+"tldjs@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "tldjs@npm:2.3.1"
+  dependencies:
+    punycode: "npm:^1.4.1"
+  checksum: b0c3981dd8ab064b5a807f43463a23e3372420cda36f973effd56df248f8b94fe9845ebf16123e0e8033074459332dfb36753b0e72030c03920ffdda3454f64c
   languageName: node
   linkType: hard
 
