@@ -46,6 +46,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:ui/button"\
     },\
     {\
+      "name": "@ui/checkbox",\
+      "reference": "workspace:ui/checkbox"\
+    },\
+    {\
       "name": "@ui/condition",\
       "reference": "workspace:ui/condition"\
     },\
@@ -145,6 +149,7 @@ const RAW_RUNTIME_STATE =
     ["@ui/autocomplete", ["workspace:ui/autocomplete"]],\
     ["@ui/avatar", ["workspace:ui/avatar"]],\
     ["@ui/button", ["virtual:00e4e76ef8c6e63af9f5199dc5b3b6dc4ef9b4cfa879ea38d1d90784a94d2689844ca55db3146cd45698815f11dc979d786c423ca5ec13f2a648f0c607fef873#workspace:ui/button", "virtual:1f3e395d7b679a26125c2674ad1abe13816fe14c1644b7802eaf089ef1b8e1cf701ded84327a23b01256fb315e7f59a262b80af016dad886d0183bb6732fabd0#workspace:ui/button", "virtual:9e3b02e2d2c7bb6facf5dcf3d3626139142e488bb839592c67138515422ba6e1fd4f5e601ff2eda87ca885c9439afb1a7a23a0007946582794e61571d5d63b5c#workspace:ui/button", "workspace:ui/button"]],\
+    ["@ui/checkbox", ["workspace:ui/checkbox"]],\
     ["@ui/condition", ["virtual:654f9eaf5f83de5c9d4e4d14228c1c60594034abac18b5c52fdc7538bb88fd2e36a9161c410ab4628d30f9de0a0589967008eff6433d9bc75fc55f86763c5c68#workspace:ui/condition", "virtual:892b5e20910e7d3f60a3a18fdc6d539927fe1b67dadd875dd203f12809e414eb5f65f746fbcd33adecdaeab730d63e9cbe157256b2b50ffa8251f20959f959f9#workspace:ui/condition", "workspace:ui/condition"]],\
     ["@ui/conditional-render", ["virtual:71f9ef3e6d1fc549bb3892cd8f0e22ad4e4c8fdad0c64e2d4756fa43cd348a0654fa49537ad8b7d0231e8f18a8c9c31c1faf8a88be999ab3ea6d80cf1a6889a4#workspace:ui/conditional-render", "workspace:ui/conditional-render"]],\
     ["@ui/design", ["workspace:ui/design"]],\
@@ -9404,6 +9409,23 @@ const RAW_RUNTIME_STATE =
           ["@ui/utils", "virtual:71f9ef3e6d1fc549bb3892cd8f0e22ad4e4c8fdad0c64e2d4756fa43cd348a0654fa49537ad8b7d0231e8f18a8c9c31c1faf8a88be999ab3ea6d80cf1a6889a4#workspace:ui/utils"],\
           ["@vanilla-extract/css", "npm:1.14.2"],\
           ["@vanilla-extract/recipes", "virtual:a53b47c88fb9a4c8a4c86d12121cf3da81cd3819f9d8e55f5021d527f71cdf60f8c656a6445bffcf14f1ba90333c18f007afc7ff40ed095f5b36602cc44bd8c9#npm:0.5.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@ui/checkbox", [\
+      ["workspace:ui/checkbox", {\
+        "packageLocation": "./ui/checkbox/",\
+        "packageDependencies": [\
+          ["@ui/checkbox", "workspace:ui/checkbox"],\
+          ["@storybook/react", "virtual:e7e05b0d4f5ab0d1b1afaec4339004c9089720852ec34341d261da526c23b3fcf432f932b0b07e08372f4b5437ba725ac5fc3b694be461825b7009a34f461829#npm:8.1.11"],\
+          ["@types/react", "npm:18.2.48"],\
+          ["@ui/theme", "virtual:59afff51b205bf3460b9798828a745573b09e56d451faedf3eb789ec2971612a7b56479a8f9a3912867c9afdcb70d1c1290983f867d4bb56012e00970749ca6c#workspace:ui/theme"],\
+          ["@ui/utils", "virtual:71f9ef3e6d1fc549bb3892cd8f0e22ad4e4c8fdad0c64e2d4756fa43cd348a0654fa49537ad8b7d0231e8f18a8c9c31c1faf8a88be999ab3ea6d80cf1a6889a4#workspace:ui/utils"],\
+          ["@vanilla-extract/css", "npm:1.14.2"],\
+          ["clsx", "npm:2.1.1"],\
+          ["framer-motion", "virtual:e7e05b0d4f5ab0d1b1afaec4339004c9089720852ec34341d261da526c23b3fcf432f932b0b07e08372f4b5437ba725ac5fc3b694be461825b7009a34f461829#npm:11.2.11"],\
+          ["rainbow-sprinkles", "virtual:ff71f372cc3486cd89139b4eb0299a0e09ec87afe363215d1cf0bec88448af55e5437e150b268a8c04ac7dec287bc7bcdc966d8a5f5241163b71aafe4e73c8d8#npm:0.17.2"]\
         ],\
         "linkType": "SOFT"\
       }]\
