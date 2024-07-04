@@ -1,0 +1,18 @@
+{
+  "name": "@ui/upload",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@atls/react-upload": "0.0.3",
+    "graphql": "16.9.0",
+    "react-dropzone": "14.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
