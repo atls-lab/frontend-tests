@@ -1,8 +1,7 @@
-import { style }                from '@vanilla-extract/css'
+import { style }          from '@vanilla-extract/css'
+import { styleVariants }  from '@vanilla-extract/css'
 
-import { styleVariants } from '@vanilla-extract/css'
-
-import { BoxShapeStyles }        from './shape.interfaces'
+import { BoxShapeStyles } from './shape.interfaces'
 
 export const createBoxBaseShapeStyles = (size: number, borderWidth: number | string) =>
   style({
