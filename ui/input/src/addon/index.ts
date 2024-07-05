@@ -1,2 +1,3 @@
+export * from './addon.component'
 export * from './addon.css'
-export * from './create-addon-position-styles.util'
+export * from './addon.interfaces'
