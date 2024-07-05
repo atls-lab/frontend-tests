@@ -1,30 +1,21 @@
-import { Meta }                             from '@storybook/react'
-import { StoryObj }                         from '@storybook/react'
+import { Meta }                      from '@storybook/react'
+import { StoryObj }                  from '@storybook/react'
 
-import React                                from 'react'
-import clsx                                 from 'clsx'
-import { useRef }                           from 'react'
-import { useState }                         from 'react'
+import React                         from 'react'
+import { useRef }                    from 'react'
+import { useState }                  from 'react'
 
-import { ConditionalRender }                from '@ui/conditional-render'
-import { ForwardEventsState }               from '@ui/events-state'
-import { Box }                              from '@ui/layout'
-import { SimpleUpload }                     from '@ui/upload'
-import { UploadResult }                     from '@ui/upload'
-import { vars }                             from '@ui/theme'
+import { Condition }                 from '@ui/condition'
+import { ForwardEventsState }        from '@ui/events-state'
+import { Box }                       from '@ui/layout'
+import { SimpleUpload }              from '@ui/upload'
+import { UploadResult }              from '@ui/upload'
 
-import { RawInput }                         from './raw-input'
-import { createAddonPositionStyles }        from './addon'
-import { attachmentBaseStyles }             from './attachment'
-import { createAttachmentAppearanceStyles } from './attachment'
-import { createAttachmentPositionStyles }   from './attachment'
-import { createAttachmentShapeStyles }      from './attachment'
-import { baseInputStyles }                  from './input'
-import { createTextareaProps }              from './textarea'
-import { textareaAddonContainerStyles }     from './textarea'
-import { createAddonsContainerStyles }      from './utils'
-import { createAppearanceStyles }           from './utils'
-import { createShapeStyles }                from './utils'
+import { Addon }                     from './addon'
+import { Attachment }                from './attachment'
+import { TextareaContainer }         from './textarea'
+import { addonsContainerBaseStyles } from './addon'
+import { baseInputStyles }           from './input'
 
 const getAddonPosition = (addonBefore, addonAfter) => {
   if (addonBefore && addonAfter) {
@@ -68,133 +59,89 @@ const meta: Meta = {
   }) => {
     const [value, setValue] = useState('контент')
     const [files, setFiles] = useState<Array<UploadResult>>([])
-    const ref = useRef<HTMLInputElement>(null)
-
-    const { containerProps, rawInputProps } = createTextareaProps()
-
-    const ConditionalRenderElement = ConditionalRender()
+    const ref = useRef<HTMLTextAreaElement>(null)
 
     const attach = getAddonPosition(addonBefore, addonAfter)
 
+    const addonProps = {
+      fontColor: addonFontColor,
+      backgroundColor: addonBackgroundColor,
+      borderColor: addonBorderColor,
+      size: `${size}px`,
+      borderWidth,
+      fontFamily,
+      fontSize: `${fontSize}px`,
+      fontWeight,
+      rounding: shapeRounding,
+      paddingLeft,
+      paddingRight,
+    }
+
+    const textareaContainerProps = {
+      fontColor,
+      backgroundColor,
+      borderColor,
+      size: `${size}px`,
+      borderWidth,
+      fontFamily,
+      fontSize: `${fontSize}px`,
+      fontWeight,
+      rounding,
+      paddingLeft,
+      paddingRight,
+    }
+
+    const attachmentProps = {
+      offsetLeft: '6px',
+      offsetRight: '6px',
+      fontFamily,
+      fontSize: `${fontSize}px`,
+      fontWeight,
+      fontColor,
+    }
+
     return (
-      <Box width={containerWidth} justifyContent='center'>
-        <div className={createAddonsContainerStyles({ borderWidth, attach: Boolean(attach) })}>
-          <ConditionalRenderElement
-            className={clsx(
-              baseInputStyles,
-              createAppearanceStyles({
-                fontColor,
-                backgroundColor,
-                borderColor,
-              }),
-              createShapeStyles({
-                size,
-                borderWidth,
-                fontFamily,
-                fontSize,
-                fontWeight,
-                rounding: shapeRounding,
-                paddingLeft,
-                paddingRight,
-              }),
-              createAddonPositionStyles('before')
-            )}
-          >
-            {addonBefore}
-          </ConditionalRenderElement>
-          <ForwardEventsState ref={ref} events={['focus', 'blur']}>
-            <div
-              className={clsx(
-                baseInputStyles,
-                createAppearanceStyles({
-                  fontColor: addonFontColor,
-                  backgroundColor: addonBackgroundColor,
-                  borderColor: addonBorderColor,
-                }),
-                createShapeStyles({
-                  size,
-                  borderWidth,
-                  fontFamily,
-                  fontSize,
-                  fontWeight,
-                  rounding: shapeRounding,
-                  paddingLeft,
-                  paddingRight,
-                })
-              )}
-              // rounding={rounding}
-              // attach={attach}
-              {...containerProps}
-            >
-              <ConditionalRenderElement
-                className={clsx(
-                  attachmentBaseStyles,
-                  createAttachmentShapeStyles({
-                    fontFamily,
-                    fontSize,
-                    fontWeight,
-                  }),
-                  createAttachmentPositionStyles('prefix', 6, 6),
-                  createAttachmentAppearanceStyles(fontColor)
-                )}
-              >
-                {prefix}
-              </ConditionalRenderElement>
-              <RawInput
-                ref={ref}
-                value={value}
-                onChange={(event) => setValue(event.target.value)}
-                {...rawInputProps}
-              />
-              <div className={textareaAddonContainerStyles}>
-                <SimpleUpload
-                  bucket='bucket'
-                  multiple
-                  onFile={(file) => setFiles([...files, file])}
-                >
-                  <span>Upload file</span>
-                </SimpleUpload>
-              </div>
-              <ConditionalRenderElement
-                className={clsx(
-                  attachmentBaseStyles,
-                  createAttachmentShapeStyles({
-                    fontFamily,
-                    fontSize,
-                    fontWeight,
-                  }),
-                  createAttachmentPositionStyles('suffix', 6, 6),
-                  createAttachmentAppearanceStyles(fontColor)
-                )}
-              >
-                {suffix}
-              </ConditionalRenderElement>
-            </div>
-          </ForwardEventsState>
-          <ConditionalRenderElement
-            className={clsx(
-              baseInputStyles,
-              createAppearanceStyles({
-                fontColor: addonFontColor,
-                backgroundColor: addonBackgroundColor,
-                borderColor: addonBorderColor,
-              }),
-              createShapeStyles({
-                size,
-                borderWidth,
-                fontFamily,
-                fontSize,
-                fontWeight,
-                rounding: shapeRounding,
-                paddingLeft,
-                paddingRight,
-              }),
-              createAddonPositionStyles('after')
-            )}
-          >
-            {addonAfter}
-          </ConditionalRenderElement>
-        </div>
+      <Box fill flexDirection='column' alignItems='center' justifyContent='center'>
+        <Box width={`${containerWidth}px`} justifyContent='center'>
+          <div className={addonsContainerBaseStyles} style={{ marginRight: borderWidth || 1 }}>
+            <Condition match={Boolean(addonBefore)}>
+              <Addon position='before' attach={attach} {...addonProps}>
+                {addonBefore}
+              </Addon>
+            </Condition>
+            <ForwardEventsState ref={ref} events={['focus', 'blur']}>
+              <TextareaContainer attach={attach} {...textareaContainerProps}>
+                <Condition match={Boolean(prefix)}>
+                  <Attachment type='prefix' {...attachmentProps}>
+                    {prefix}
+                  </Attachment>
+                </Condition>
+                <textarea
+                  ref={ref}
+                  className={baseInputStyles}
+                  value={value}
+                  onChange={(event) => setValue(event.target.value)}
+                  style={{ maxWidth: '100%' }}
+                />
+                <Condition match={Boolean(suffix)}>
+                  <Attachment type='suffix' {...attachmentProps}>
+                    {suffix}
+                  </Attachment>
+                </Condition>
+              </TextareaContainer>
+            </ForwardEventsState>
+            <Condition match={Boolean(addonAfter)}>
+              <Addon position='after' attach={attach} {...addonProps}>
+                {addonAfter}
+              </Addon>
+            </Condition>
+          </div>
+        </Box>
+        <Box flexDirection='column' width={`${containerWidth}px`}>
+          <SimpleUpload bucket='bucket' multiple onFile={(file) => setFiles([...files, file])}>
+            <span>Upload file</span>
+          </SimpleUpload>
+        </Box>
       </Box>
     )
   },
@@ -253,7 +200,7 @@ const meta: Meta = {
       },
     },
     borderWidth: {
-      name: 'Размер',
+      name: 'Размер обводки',
       description: 'Размер обводки',
       table: {
         category: 'Представление',
@@ -270,10 +217,8 @@ const meta: Meta = {
         category: 'Представление',
         subcategory: 'Форма',
       },
-      control: {
-        type: 'select',
-        options: vars.fonts,
-      },
+      control: { type: 'select' },
+      options: ['Roboto', 'Inter'],
     },
     fontWeight: {
       name: 'Насыщенность шрифта',
@@ -282,10 +227,8 @@ const meta: Meta = {
         category: 'Представление',
         subcategory: 'Форма',
       },
-      control: {
-        type: 'select',
-        options: vars.fontWeights,
-      },
+      control: { type: 'select' },
+      options: [400, 500, 600],
     },
     fontSize: {
       name: 'Размер шрифта',
@@ -410,7 +353,7 @@ const meta: Meta = {
 
 export default meta
 
-export const TextArea: StoryObj = {
+export const Textarea: StoryObj = {
   args: {
     containerWidth: 300,
     prefix: '',
