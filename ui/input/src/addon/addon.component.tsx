@@ -7,6 +7,7 @@ import { addonSprinkles }            from './addon.css'
 import { addonPositionAfterStyles }  from './addon.css'
 import { addonPositionBeforeStyles } from './addon.css'
 import { baseAddonStyles }           from './addon.css'
+import { getRoundingStyles }         from './utils'
 
 export const Addon = forwardRef<HTMLDivElement, AddonProps>((
   {
@@ -16,17 +17,13 @@ export const Addon = forwardRef<HTMLDivElement, AddonProps>((
     paddingLeft,
     paddingRight,
     paddingRatio = 0.5,
-    rounding = 0,
+    rounding = '0',
     size = '16px',
     ...props
   },
   ref
 ) => {
-  const roundingStyles = {
-    borderRadius: attach === 'both' ? 0 : rounding,
-    ...(attach === 'left' ? { borderBottomRightRadius: 0, borderTopRightRadius: 0 } : {}),
-    ...(attach === 'right' ? { borderBottomLeftRadius: 0, borderTopLeftRadius: 0 } : {}),
-  }
+  const roundingStyles = getRoundingStyles(rounding, position)
 
   const paddingStyles = {
     size,

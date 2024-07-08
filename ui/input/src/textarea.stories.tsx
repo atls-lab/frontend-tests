@@ -2,6 +2,7 @@ import { Meta }                      from '@storybook/react'
 import { StoryObj }                  from '@storybook/react'
 
 import React                         from 'react'
+import { clsx }                      from 'clsx'
 import { useRef }                    from 'react'
 import { useState }                  from 'react'
 
@@ -10,12 +11,14 @@ import { ForwardEventsState }        from '@ui/events-state'
 import { Box }                       from '@ui/layout'
 import { SimpleUpload }              from '@ui/upload'
 import { UploadResult }              from '@ui/upload'
+import { vars }                      from '@ui/theme'
 
 import { Addon }                     from './addon'
 import { Attachment }                from './attachment'
 import { TextareaContainer }         from './textarea'
 import { addonsContainerBaseStyles } from './addon'
 import { baseInputStyles }           from './input'
+import { baseTextareaStyles }        from './textarea'
 
 const getAddonPosition = (addonBefore, addonAfter) => {
   if (addonBefore && addonAfter) {
@@ -68,13 +71,13 @@ const meta: Meta = {
       backgroundColor: addonBackgroundColor,
       borderColor: addonBorderColor,
       size: `${size}px`,
-      borderWidth,
+      borderWidth: `${borderWidth}px`,
       fontFamily,
       fontSize: `${fontSize}px`,
       fontWeight,
-      rounding: shapeRounding,
-      paddingLeft,
-      paddingRight,
+      rounding: `${shapeRounding}px`,
+      paddingLeft: `${paddingLeft}px`,
+      paddingRight: `${paddingRight}px`,
     }
 
     const textareaContainerProps = {
@@ -82,13 +85,13 @@ const meta: Meta = {
       backgroundColor,
       borderColor,
       size: `${size}px`,
-      borderWidth,
+      borderWidth: `${borderWidth}px`,
       fontFamily,
       fontSize: `${fontSize}px`,
       fontWeight,
-      rounding,
-      paddingLeft,
-      paddingRight,
+      rounding: `${rounding}px`,
+      paddingLeft: `${paddingLeft}px`,
+      paddingRight: `${paddingRight}px`,
     }
 
     const attachmentProps = {
@@ -118,10 +121,9 @@ const meta: Meta = {
                 </Condition>
                 <textarea
                   ref={ref}
-                  className={baseInputStyles}
+                  className={clsx(baseInputStyles, baseTextareaStyles)}
                   value={value}
                   onChange={(event) => setValue(event.target.value)}
-                  style={{ maxWidth: '100%' }}
                 />
                 <Condition match={Boolean(suffix)}>
                   <Attachment type='suffix' {...attachmentProps}>
@@ -218,7 +220,7 @@ const meta: Meta = {
         subcategory: 'Форма',
       },
       control: { type: 'select' },
-      options: ['Roboto', 'Inter'],
+      options: [vars.fonts.primary],
     },
     fontWeight: {
       name: 'Насыщенность шрифта',
@@ -227,8 +229,12 @@ const meta: Meta = {
         category: 'Представление',
         subcategory: 'Форма',
       },
-      control: { type: 'select' },
-      options: [400, 500, 600],
+      control: {
+        type: 'range',
+        min: 400,
+        max: 600,
+        step: 100,
+      },
     },
     fontSize: {
       name: 'Размер шрифта',
@@ -362,7 +368,7 @@ export const Textarea: StoryObj = {
     addonAfter: '',
     size: 36,
     borderWidth: 1,
-    fontFamily: 'Roboto',
+    fontFamily: vars.fonts.primary,
     fontWeight: 400,
     fontSize: 12,
     shapeRounding: undefined,

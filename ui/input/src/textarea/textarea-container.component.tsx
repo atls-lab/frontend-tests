@@ -5,6 +5,7 @@ import { forwardRef }                  from 'react'
 import { TextareaContainerProps }      from './textarea-container.interfaces'
 import { textareaContainerSprinkles }  from './textarea-container.css'
 import { baseTextareaContainerStyles } from './textarea-container.css'
+import { getRoundingStyles }           from './utils'
 
 export const TextareaContainer = forwardRef<HTMLDivElement, TextareaContainerProps>((
   {
@@ -13,18 +14,13 @@ export const TextareaContainer = forwardRef<HTMLDivElement, TextareaContainerPro
     paddingLeft,
     paddingRight,
     paddingRatio = 0.5,
-    rounding = 0,
+    rounding = '0',
     size = '16px',
     ...props
   },
   ref
 ) => {
-  const roundingStyles = {
-    borderRadius: attach === 'both' ? 0 : rounding,
-    ...(attach === 'left' ? { borderBottomRightRadius: 0, borderTopRightRadius: 0 } : {}),
-    ...(attach === 'right' ? { borderBottomLeftRadius: 0, borderTopLeftRadius: 0 } : {}),
-  }
-
+  const roundingStyles = getRoundingStyles(rounding, attach)
   const paddingStyles = {
     size,
     paddingLeft: paddingLeft || `${parseInt(size, 10) * paddingRatio}px`,

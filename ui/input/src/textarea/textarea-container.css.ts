@@ -1,9 +1,22 @@
+import { style }                  from '@vanilla-extract/css'
+
 import { createRainbowSprinkles } from 'rainbow-sprinkles'
 import { defineProperties }       from 'rainbow-sprinkles'
 
 import { baseInputStyles }        from '../input'
 
 export const baseTextareaContainerStyles = baseInputStyles
+
+export const baseTextareaStyles = style({
+  maxWidth: '100%',
+  height: '100%',
+  resize: 'none',
+  fontSize: 'inherit',
+  fontWeight: 'inherit',
+  fontFamily: 'inherit',
+  lineHeight: 'inherit',
+  color: 'inherit',
+})
 
 const textareaContainerProperties = defineProperties({
   dynamicProperties: {
