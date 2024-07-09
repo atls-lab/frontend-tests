@@ -1,7 +1,7 @@
-import { FunctionComponent } from 'react'
-import { Children }          from 'react'
-import { ReactNode }         from 'react'
-import { createElement }     from 'react'
+import { FC }            from 'react'
+import { Children }      from 'react'
+import { ReactNode }     from 'react'
+import { createElement } from 'react'
 
 const combineChildren = (children: ReactNode): ReactNode[] => {
   let isPrevChildPure: boolean = false
@@ -28,7 +28,7 @@ const combineChildren = (children: ReactNode): ReactNode[] => {
 
 export const useDividedChildren = (
   children: ReactNode,
-  Wrapper: FunctionComponent,
+  Wrapper: FC,
   props = {}
 ): ReactNode | ReactNode[] => {
   if (Children.count(children) > 1) {
