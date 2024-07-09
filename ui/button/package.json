@@ -9,7 +9,8 @@
     "@ui/theme": "workspace:0.0.1",
     "@ui/utils": "workspace:0.0.1",
     "@vanilla-extract/recipes": "0.5.2",
-    "clsx": "2.1.1"
+    "clsx": "2.1.1",
+    "rainbow-sprinkles": "0.17.2"
   },
   "devDependencies": {
     "@storybook/react": "8.1.11",
