@@ -8,4 +8,4 @@ import { rawInputStyles }      from './raw-input.css'
 export const RawInput = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>((
   { className, ...props },
   ref
-) => <input ref={ref} className={clsx({ className, rawInputStyles })} {...props} />)
+) => <input ref={ref} className={clsx(className, rawInputStyles)} {...props} />)
