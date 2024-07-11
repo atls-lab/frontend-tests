@@ -7,6 +7,7 @@ export const colors = {
   gray: 'rgba(245, 245, 245, 1)',
   black: 'rgba(0, 0, 0, 1)',
   blackThreeQuarters: 'rgba(0, 0, 0, 0.75)',
+  lightPurple: 'rgba(218, 222, 237, 1)',
 
   'button.blue.default.font': 'rgba(255, 255, 255, 1)',
   'button.blue.default.background': 'rgba(65, 109, 223, 1)',
