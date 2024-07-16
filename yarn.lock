@@ -5812,10 +5812,14 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
     "@vanilla-extract/recipes": "npm:0.5.2"
+    clsx: "npm:2.1.1"
+    rainbow-sprinkles: "npm:0.17.2"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -5856,7 +5860,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/conditional-render@workspace:0.0.1, @ui/conditional-render@workspace:ui/conditional-render":
+"@ui/conditional-render@workspace:ui/conditional-render":
   version: 0.0.0-use.local
   resolution: "@ui/conditional-render@workspace:ui/conditional-render"
   dependencies:
@@ -5906,10 +5910,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/divider@workspace:ui/divider"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/layout": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
   peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
     react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
@@ -5946,7 +5956,7 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
-    "@ui/conditional-render": "workspace:0.0.1"
+    "@ui/condition": "workspace:0.0.1"
     "@ui/events-state": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
@@ -5956,6 +5966,7 @@ __metadata:
     "@vanilla-extract/dynamic": "npm:2.1.1"
     "@vanilla-extract/recipes": "npm:0.5.2"
     clsx: "npm:2.1.1"
+    rainbow-sprinkles: "npm:0.17.2"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -6012,6 +6023,43 @@ __metadata:
     clsx: "npm:2.1.1"
     framer-motion: "npm:11.2.11"
     rainbow-sprinkles: "npm:0.17.2"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/next-image@workspace:ui/next-image":
+  version: 0.0.0-use.local
+  resolution: "@ui/next-image@workspace:ui/next-image"
+  dependencies:
+    "@types/react": "npm:18.2.48"
+    "@vanilla-extract/css": "npm:1.14.2"
+    clsx: "npm:2.1.1"
+    next: "npm:14.1.0"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/placeholder@workspace:ui/placeholder":
+  version: 0.0.0-use.local
+  resolution: "@ui/placeholder@workspace:ui/placeholder"
+  dependencies:
+    "@storybook/react": "npm:8.1.11"
+    "@types/react": "npm:18.2.48"
+    "@ui/condition": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/theme": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
+    clsx: "npm:2.1.1"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -6077,6 +6125,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/scalable-content@workspace:ui/scalable-content":
+  version: 0.0.0-use.local
+  resolution: "@ui/scalable-content@workspace:ui/scalable-content"
+  dependencies:
+    "@types/react": "npm:18.2.48"
+    "@ui/utils": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    clsx: "npm:2.1.1"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/scrollbar@workspace:ui/scrollbar":
   version: 0.0.0-use.local
   resolution: "@ui/scrollbar@workspace:ui/scrollbar"
@@ -6107,6 +6171,23 @@ __metadata:
     clsx: "npm:2.1.1"
     framer-motion: "npm:11.2.11"
     rainbow-sprinkles: "npm:0.17.2"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/swiper@workspace:ui/swiper":
+  version: 0.0.0-use.local
+  resolution: "@ui/swiper@workspace:ui/swiper"
+  dependencies:
+    "@storybook/react": "npm:8.1.11"
+    "@types/react": "npm:18.2.48"
+    "@ui/layout": "workspace:0.0.1"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
+    swiper: "npm:11.1.4"
   peerDependencies:
     "@vanilla-extract/css": "*"
     "@vanilla-extract/dynamic": "*"
@@ -6153,10 +6234,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/text@workspace:ui/text"
   dependencies:
+    "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@ui/condition": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
     clsx: "npm:2.1.1"
     rainbow-sprinkles: "npm:0.17.2"
   peerDependencies:
@@ -17187,6 +17271,13 @@ __metadata:
     "@swc/core": ^1.2.147
     webpack: ">=2"
   checksum: fe90948c02a51bb8ffcff1ce3590e01dc12860b0bb7c9e22052b14fa846ed437781ae265614a5e14344bea22001108780f00a6e350e28c0b3499bc4cd11335fb
+  languageName: node
+  linkType: hard
+
+"swiper@npm:11.1.4":
+  version: 11.1.4
+  resolution: "swiper@npm:11.1.4"
+  checksum: c4ecf10dc447921ec8c58a8f9a2b76f1ca6dddbc81aff1caafb8c8504460c9e934a9f709113a757ca91dd0305d2e25337fc512206813ea333492415d7a144757
   languageName: node
   linkType: hard
 

@@ -1,4 +1,4 @@
-import React             from 'react'
+import React              from 'react'
 
 import { CheckboxProps }  from './checkbox.interfaces'
 import { checkboxStyles } from './checkbox.styles.css'
