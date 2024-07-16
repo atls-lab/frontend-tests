@@ -1,12 +1,22 @@
 import React            from 'react'
 import { FC }           from 'react'
 
-import { Box }          from '@ui/layout'
-
 import { DividerProps } from './divider.interface'
 
-const Divider: FC<DividerProps> = ({ weight, color, ...props }) => (
-  <Box width='100%' height={weight || 1} backgroundColor={color} {...props} />
-)
+const Divider: FC<DividerProps> = ({
+  rounding = '$none',
+  weight = 1,
+  color = '$black',
+  ...props
+}) => {
+  const style = {
+    height: `${weight}px`,
+    backgroundColor: color,
+    borderRadius: rounding,
+    width: '100%',
+  }
+
+  return <div style={style} {...props} />
+}
 
 export { Divider }
