@@ -15,7 +15,7 @@ export const baseHandleStyles = style({
   padding: 0,
   verticalAlign: 'middle',
   borderRadius: '20px 20px',
-  border: vars.borders.bigLightBlue,
+  border: vars.borders.normalBlue,
   backgroundColor: vars.colors.white,
   cursor: 'pointer',
   outline: 'none',
