@@ -1,10 +1,11 @@
 import { style } from '@vanilla-extract/css'
 
 export const checkBaseStyles = style({
-  width: '100%',
-  height: '100%',
+  width: 'calc(100% - 3px)',
+  height: 'calc(100% - 3px)',
   display: 'none',
-  backgroundColor: "black"
+  backgroundColor: "blue",
+  borderRadius: 4
 });
 
 export const checkCheckedStyles = style({
