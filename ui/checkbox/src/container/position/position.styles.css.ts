@@ -5,4 +5,4 @@ export const containerPositionStyles = styleVariants({
   top: { flexDirection: 'column-reverse' },
   end: { flexDirection: 'row' },
   bottom: { flexDirection: 'column' },
-});
+})

@@ -5,4 +5,4 @@ export const labelPositionStyles = styleVariants({
   end: { marginLeft: 5 },
   top: { marginBottom: 5 },
   bottom: { marginTop: 5 },
-});
+})

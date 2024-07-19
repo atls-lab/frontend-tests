@@ -7,4 +7,4 @@ export const containerBaseStyles = style({
   alignItems: 'center',
   userSelect: 'none',
   outline: 'none',
-});
+})

@@ -1,9 +1,10 @@
-import { Meta }                from '@storybook/react'
+import { Meta }                     from '@storybook/react'
 
-import React                   from 'react'
-import { Layout }                      from '@ui/layout'
+import React                        from 'react'
 
-import {Switch as SwitchComponent} from "./switch.component";
+import { Layout }                   from '@ui/layout'
+
+import { Switch as SwitchComponent } from './switch.component'
 
 export default {
   title: 'Components/Switch',
@@ -12,13 +13,13 @@ export default {
 } as Meta
 
 export const Switch = ({ disabled, checked, onChange }) => (
-    <Layout justifyContent='center'>
-      <SwitchComponent disabled={disabled} checked={checked} onChange={onChange} />
-    </Layout>
+  <Layout justifyContent='center'>
+    <SwitchComponent disabled={disabled} checked={checked} onChange={onChange} />
+  </Layout>
 )
 
 Switch.args = {
   disabled: false,
   checked: false,
-  onChange: ()=>{},
+  onChange: () => {},
 }
