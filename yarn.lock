@@ -5834,9 +5834,11 @@ __metadata:
   dependencies:
     "@storybook/react": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
     clsx: "npm:2.1.1"
     framer-motion: "npm:11.2.11"
     rainbow-sprinkles: "npm:0.17.2"

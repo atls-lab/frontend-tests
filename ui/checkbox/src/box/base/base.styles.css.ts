@@ -7,4 +7,4 @@ export const boxBaseStyles = style({
   position: 'relative',
   borderStyle: 'solid',
   boxSizing: 'border-box',
-})
+});

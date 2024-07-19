@@ -1,7 +1,5 @@
 import { style } from '@vanilla-extract/css'
 
-export const labelAppearanceStyles = {
-  label: style({
-    color: 'inherit',
-  }),
-}
+export const labelAppearanceStyles = style({
+  color: 'black',
+});

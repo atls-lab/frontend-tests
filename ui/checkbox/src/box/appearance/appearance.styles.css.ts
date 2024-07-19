@@ -1,17 +1,7 @@
-import { style }               from '@vanilla-extract/css'
+import { styleVariants }               from '@vanilla-extract/css'
 
-import { BoxAppearanceStyles } from './appearance.interfaces'
-
-export const createBoxAppearanceStyles = ({
-  borderColor,
-  backgroundColor,
-}: BoxAppearanceStyles) => {
-  const borderColorValue = typeof borderColor === 'function' ? borderColor() : borderColor
-  const backgroundColorValue =
-    typeof backgroundColor === 'function' ? backgroundColor() : backgroundColor
-
-  return style({
-    borderColor: borderColorValue,
-    backgroundColor: backgroundColorValue,
-  })
-}
+export const boxColorStyles = styleVariants({
+  blue: { border: '1px solid blue' },
+  green: {border: '1px solid green'},
+  red: {border: '1px solid red'},
+});

@@ -1,16 +1,8 @@
-import { style } from '@vanilla-extract/css'
+import { styleVariants } from '@vanilla-extract/css'
 
-export const containerPositionStyles = {
-  start: style({
-    flexDirection: 'row-reverse',
-  }),
-  top: style({
-    flexDirection: 'column-reverse',
-  }),
-  end: style({
-    flexDirection: 'row',
-  }),
-  bottom: style({
-    flexDirection: 'column',
-  }),
-}
+export const containerPositionStyles = styleVariants({
+  start: { flexDirection: 'row-reverse' },
+  top: { flexDirection: 'column-reverse' },
+  end: { flexDirection: 'row' },
+  bottom: { flexDirection: 'column' },
+});
