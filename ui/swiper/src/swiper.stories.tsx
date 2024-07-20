@@ -49,4 +49,6 @@ const meta: Meta = {
 
 export default meta
 
-export const Swiper: StoryObj = {}
+export const Swiper: StoryObj = {
+  name: 'Базовый',
+}
