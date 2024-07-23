@@ -5922,6 +5922,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/card@workspace:ui/card":
+  version: 0.0.0-use.local
+  resolution: "@ui/card@workspace:ui/card"
+  dependencies:
+    "@storybook/react": "npm:8.1.11"
+    "@types/react": "npm:18.2.48"
+    "@types/react-dom": "npm:18.2.18"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/condition": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
+    clsx: "npm:2.1.1"
+    framer-motion: "npm:11.2.11"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/checkbox@workspace:ui/checkbox":
   version: 0.0.0-use.local
   resolution: "@ui/checkbox@workspace:ui/checkbox"
@@ -5984,9 +6007,6 @@ __metadata:
     "@storybook/test": "npm:8.1.11"
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
-    "@ui/layout": "workspace:0.0.1"
-    "@ui/modal": "workspace:0.0.1"
-    "@ui/tooltip": "workspace:0.0.1"
     "@vanilla-extract/css": "npm:1.15.3"
     "@vanilla-extract/dynamic": "npm:2.1.1"
     "@vanilla-extract/webpack-plugin": "npm:2.3.11"
@@ -6107,7 +6127,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/modal@workspace:0.0.1, @ui/modal@workspace:ui/modal":
+"@ui/modal@workspace:ui/modal":
   version: 0.0.0-use.local
   resolution: "@ui/modal@workspace:ui/modal"
   dependencies:
@@ -6275,6 +6295,30 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/sidebar@workspace:ui/sidebar":
+  version: 0.0.0-use.local
+  resolution: "@ui/sidebar@workspace:ui/sidebar"
+  dependencies:
+    "@fortawesome/fontawesome-svg-core": "npm:6.6.0"
+    "@fortawesome/free-solid-svg-icons": "npm:6.6.0"
+    "@fortawesome/react-fontawesome": "npm:0.2.2"
+    "@storybook/react": "npm:8.1.11"
+    "@types/react": "npm:18.2.48"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/switch": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    "@vanilla-extract/css": "npm:1.14.2"
+    "@vanilla-extract/dynamic": "npm:2.1.1"
+    clsx: "npm:2.1.1"
+    framer-motion: "npm:11.2.11"
+  peerDependencies:
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/swiper@workspace:ui/swiper":
   version: 0.0.0-use.local
   resolution: "@ui/swiper@workspace:ui/swiper"
@@ -6292,7 +6336,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/switch@workspace:ui/switch":
+"@ui/switch@workspace:0.0.1, @ui/switch@workspace:ui/switch":
   version: 0.0.0-use.local
   resolution: "@ui/switch@workspace:ui/switch"
   dependencies:
