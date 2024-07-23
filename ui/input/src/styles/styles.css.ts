@@ -21,7 +21,7 @@ export const inputStyles = recipe({
   },
 
   defaultVariants: {
-    variant: 'blue',
+    variant: 'white',
     size: 'normal',
   },
 })

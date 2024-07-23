@@ -35,7 +35,7 @@ type Story = StoryObj<typeof Input>
 
 export const Variants: Story = {
   args: {
-    variant: 'blue',
+    variant: 'white',
     size: 'normal',
   },
 }

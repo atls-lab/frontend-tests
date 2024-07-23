@@ -1,0 +1,15 @@
+{
+  "name": "@ui/portal",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "*",
+    "@vanilla-extract/dynamic": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

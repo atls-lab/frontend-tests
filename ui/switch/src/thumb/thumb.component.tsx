@@ -5,6 +5,7 @@ import { useMemo }             from 'react'
 
 import { ThumbElementProps }   from './thumb.interfaces'
 import { ThumbSprinkles }      from './thumb.styles.css'
+import { thumbMotionVariants }  from './thumb.motion'
 import { baseThumbStyles }     from './thumb.styles.css'
 import { disabledThumbStyles } from './thumb.styles.css'
 import { thumbSprinkles }      from './thumb.styles.css'
@@ -20,10 +21,19 @@ export const Thumb: React.FC<ThumbElementProps & ThumbSprinkles> = ({
   return (
     <motion.span
       initial={initial}
-      animate={checked ? 'checked' : 'visible'}
+      animate={checked && !disabled ? 'checked' : 'visible'}
       {...otherProps}
-      className={clsx(baseThumbStyles, disabledThumbStyles, otherProps?.className, className)}
+      className={clsx(
+        baseThumbStyles,
+        disabled ? disabledThumbStyles : '',
+        otherProps?.className,
+        className
+      )}
       style={{ ...style, ...otherProps?.style }}
     />
   )
+}
+
+Thumb.defaultProps = {
+  variants: thumbMotionVariants,
 }
