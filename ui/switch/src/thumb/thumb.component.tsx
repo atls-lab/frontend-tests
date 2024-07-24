@@ -5,7 +5,7 @@ import { useMemo }             from 'react'
 
 import { ThumbElementProps }   from './thumb.interfaces'
 import { ThumbSprinkles }      from './thumb.styles.css'
-import { thumbMotionVariants }  from './thumb.motion'
+import { thumbMotionVariants } from './thumb.motion'
 import { baseThumbStyles }     from './thumb.styles.css'
 import { disabledThumbStyles } from './thumb.styles.css'
 import { thumbSprinkles }      from './thumb.styles.css'

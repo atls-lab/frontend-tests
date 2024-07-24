@@ -1,10 +1,5 @@
 import { Meta }                          from '@storybook/react'
-
-import { StoryObj }                from '@storybook/react'
-
-import React                            from 'react'
-
-import { vars }                          from '@ui/theme'
+import { StoryObj }                      from '@storybook/react'
 
 import { Checkbox as CheckboxComponent } from './checkbox.component'
 

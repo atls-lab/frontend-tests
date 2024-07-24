@@ -1,23 +1,19 @@
-import React                                                           from 'react'
+import React                       from 'react'
+import { forwardRef }              from 'react'
+import { useState }                from 'react'
 
-import { forwardRef }                                            from 'react'
-
-import { useState }                                  from 'react'
-
-import { CheckboxProps }                                                from './checkbox.interfaces'
-import { boxBaseStyles }                                                from './box'
-import { boxShapeStyles }                                from './box'
-import { boxColorStyles }                                               from './box/appearance'
-import { checkBaseStyles }                                              from './check'
-import { checkCheckedStyles }                          from './check'
-import { containerBaseStyles }                                          from './container'
-import { containerPositionStyles }                 from './container'
-import { hiddenInputStyles }                                            from './hidden-input'
-import { labelAppearanceStyles }                                        from './label'
-
-import { labelPositionStyles }                   from './label'
-
-import { labelShapeStyles } from './label'
+import { CheckboxProps }           from './checkbox.interfaces'
+import { boxBaseStyles }           from './box'
+import { boxShapeStyles }          from './box'
+import { boxColorStyles }          from './box/appearance'
+import { checkBaseStyles }         from './check'
+import { checkCheckedStyles }      from './check'
+import { containerBaseStyles }     from './container'
+import { containerPositionStyles } from './container'
+import { hiddenInputStyles }       from './hidden-input'
+import { labelAppearanceStyles }   from './label'
+import { labelPositionStyles }     from './label'
+import { labelShapeStyles }        from './label'
 
 const CheckboxWithoutRef: React.ForwardRefRenderFunction<HTMLDivElement, CheckboxProps> = (
   {

@@ -1,5 +1,3 @@
-import { style }                from '@vanilla-extract/css'
-
 import { styleVariants } from '@vanilla-extract/css'
 
 export const boxShapeStyles = styleVariants({

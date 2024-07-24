@@ -1,8 +1,8 @@
-import { Meta }                     from '@storybook/react'
+import { Meta }                      from '@storybook/react'
 
-import React                        from 'react'
+import React                         from 'react'
 
-import { Layout }                   from '@ui/layout'
+import { Layout }                    from '@ui/layout'
 
 import { Switch as SwitchComponent } from './switch.component'
 
