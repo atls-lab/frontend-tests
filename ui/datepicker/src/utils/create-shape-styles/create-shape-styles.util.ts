@@ -59,9 +59,6 @@ export const createCellShapeStyles = (
     paddingTop: padding,
     paddingBottom: padding,
   },
-  '.react-datepicker__navigation': {
-    marginTop: padding,
-  },
 })
 
 export const createDividerShapeStyles = (

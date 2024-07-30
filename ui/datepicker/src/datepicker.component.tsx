@@ -1,5 +1,7 @@
 import 'react-datepicker/dist/react-datepicker.css'
 
+import { injectGlobal }           from '@emotion/css'
+
 import React                      from 'react'
 import DatepickerComponent        from 'react-datepicker'
 import { FC }                     from 'react'
@@ -21,6 +23,8 @@ export const Datepicker: FC<DatepickerProps> = ({ withBaseStyle = true, ...props
     if (withBaseStyle) {
       const shapeStyles = createShapeStyles(props)
       const appearanceStyles = createAppearanceStyles(props)
+
+      injectGlobal(shapeStyles, appearanceStyles)
     }
   }, [withBaseStyle, props])
 

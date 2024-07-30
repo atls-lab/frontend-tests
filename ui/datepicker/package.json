@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
+    "@emotion/css": "11.13.0",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
     "rainbow-sprinkles": "0.17.2",
