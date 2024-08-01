@@ -2,82 +2,87 @@ import { vars }                   from '@ui/theme/src/theme.css'
 
 import { createAppearanceStyles } from '../utils'
 
-const primaryDefaultStyles = createAppearanceStyles({
+const appearanceBlueDefaultStyles = createAppearanceStyles({
   fontColor: vars.colors['input.blue.default.font'],
   backgroundColor: vars.colors['input.blue.default.background'],
+  borderColor: vars.colors['input.blue.default.border'],
 })
 
-const primaryHoverStyles = createAppearanceStyles({
+const appearanceBlueHoverStyles = createAppearanceStyles({
   fontColor: vars.colors['input.blue.hover.font'],
   backgroundColor: vars.colors['input.blue.hover.background'],
+  borderColor: vars.colors['input.blue.hover.border'],
 })
 
-const primaryFocusStyles = createAppearanceStyles({
+const appearanceBlueFocusStyles = createAppearanceStyles({
   fontColor: vars.colors['input.blue.focus.font'],
   backgroundColor: vars.colors['input.blue.focus.background'],
+  borderColor: vars.colors['input.blue.focus.border'],
 })
 
-const primaryActiveStyles = createAppearanceStyles({
+const appearanceBlueActiveStyles = createAppearanceStyles({
   fontColor: vars.colors['input.blue.active.font'],
   backgroundColor: vars.colors['input.blue.active.background'],
+  borderColor: vars.colors['input.blue.active.border'],
 })
 
-const primaryDisabledStyles = createAppearanceStyles({
+const appearanceBlueDisabledStyles = createAppearanceStyles({
   fontColor: vars.colors['input.blue.disabled.font'],
   backgroundColor: vars.colors['input.blue.disabled.background'],
+  borderColor: vars.colors['input.blue.disabled.border'],
 })
 
-const whiteDefaultStyles = createAppearanceStyles({
+const appearanceWhiteDefaultStyles = createAppearanceStyles({
   fontColor: vars.colors['input.white.default.font'],
   backgroundColor: vars.colors['input.white.default.background'],
   borderColor: vars.colors['input.white.default.border'],
 })
 
-const whiteHoverStyles = createAppearanceStyles({
+const appearanceWhiteHoverStyles = createAppearanceStyles({
   fontColor: vars.colors['input.white.hover.font'],
   backgroundColor: vars.colors['input.white.hover.background'],
   borderColor: vars.colors['input.white.hover.border'],
 })
 
-const whiteFocusStyles = createAppearanceStyles({
+const appearanceWhiteFocusStyles = createAppearanceStyles({
   fontColor: vars.colors['input.white.focus.font'],
   backgroundColor: vars.colors['input.white.focus.background'],
   borderColor: vars.colors['input.white.focus.border'],
 })
 
-const whiteActiveStyles = createAppearanceStyles({
+const appearanceWhiteActiveStyles = createAppearanceStyles({
   fontColor: vars.colors['input.white.active.font'],
-  backgroundColor: vars.colors['input.white.active.font'],
+  backgroundColor: vars.colors['input.white.active.background'],
   borderColor: vars.colors['input.white.active.border'],
 })
 
-const whiteDisabledStyles = createAppearanceStyles({
+const appearanceWhiteDisabledStyles = createAppearanceStyles({
   fontColor: vars.colors['input.white.disabled.font'],
   backgroundColor: vars.colors['input.white.disabled.background'],
   borderColor: vars.colors['input.white.disabled.border'],
 })
 
 export const appearanceVariant = {
-  blue: primaryDefaultStyles,
-  white: whiteDefaultStyles,
+  blue: appearanceBlueDefaultStyles,
+  white: appearanceWhiteDefaultStyles,
 }
 
 export const appearanceHover = {
-  blueHover: primaryHoverStyles,
-  whiteHover: whiteHoverStyles,
+  blueHover: appearanceBlueHoverStyles,
+  whiteHover: appearanceWhiteHoverStyles,
 }
 
 export const appearanceFocus = {
-  bluePressed: primaryFocusStyles,
-  whitePressed: whiteFocusStyles,
+  blueFocus: appearanceBlueFocusStyles,
+  whiteFocus: appearanceWhiteFocusStyles,
 }
 
 export const appearanceActive = {
-  bluePressed: primaryActiveStyles,
-  whitePressed: whiteActiveStyles,
+  blueActive: appearanceBlueActiveStyles,
+  whiteActive: appearanceWhiteActiveStyles,
 }
 
 export const appearanceDisabled = {
-  blueDisabled: primaryDisabledStyles,
-  whiteDisabled: whiteDisabledStyles,
+  blueDisabled: appearanceBlueDisabledStyles,
+  whiteDisabled: appearanceWhiteDisabledStyles,
 }
