@@ -1,0 +1,17 @@
+{
+  "name": "@ui/generators-button",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "generate-styles": "generate-styles src/styles/appearance -t ../../ui/theme/src/theme/colors.ts"
+  },
+  "dependencies": {
+    "@atls-ui-generators/utils": "0.0.6",
+    "@babel/standalone": "7.22.20",
+    "@ui/theme": "workspace:0.0.1",
+    "commander": "9.5.0"
+  },
+  "devDependencies": {
+    "@types/babel__standalone": "7.1.7"
+  }
+}
