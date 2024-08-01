@@ -8,7 +8,7 @@ import { ButtonColorSchemes } from '../button-generator.interfaces'
 const getAppearanceStylesName = (variant: string, state: string) =>
   getStylesName('appearance', variant, state)
 
-export class AppearanceStyleGenerator {
+export class ButtonAppearanceStyleGenerator {
   readonly requiredImports = [
     { import: '{ vars }', from: '@ui/theme' },
     { import: '{ createAppearanceStyles }', from: '@atls-ui-parts/button' },

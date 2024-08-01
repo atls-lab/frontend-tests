@@ -1,10 +1,10 @@
-import { pretty }                   from '@atls-ui-generators/utils'
+import { pretty }                         from '@atls-ui-generators/utils'
 
-import { readFileSync }             from 'fs'
-import { mkdirSync }                from 'fs'
-import { existsSync }               from 'fs'
+import { readFileSync }                   from 'fs'
+import { mkdirSync }                      from 'fs'
+import { existsSync }                     from 'fs'
 
-import { AppearanceStyleGenerator } from '../style-generators'
+import { ButtonAppearanceStyleGenerator } from '../style-generators'
 
 describe('button generator', () => {
   describe('appearance styles generator', () => {
@@ -109,7 +109,7 @@ export const appearanceDisabled = {
 `
 
     it('should generate code for appearance styles', () => {
-      const generator = new AppearanceStyleGenerator(colors)
+      const generator = new ButtonAppearanceStyleGenerator(colors)
       const generated = generator.generateAppearanceStyles()
 
       const code = pretty(`
@@ -122,7 +122,7 @@ export const appearanceDisabled = {
     })
 
     it('should fail if path ends with slash character', () => {
-      const generator = new AppearanceStyleGenerator(colors)
+      const generator = new ButtonAppearanceStyleGenerator(colors)
 
       if (!existsSync(`${__dirname}/generated`)) mkdirSync(`${__dirname}/generated`)
 
@@ -130,7 +130,7 @@ export const appearanceDisabled = {
     })
 
     it('should generate appearance styles file', () => {
-      const generator = new AppearanceStyleGenerator(colors)
+      const generator = new ButtonAppearanceStyleGenerator(colors)
 
       if (!existsSync(`${__dirname}/generated`)) mkdirSync(`${__dirname}/generated`)
 
